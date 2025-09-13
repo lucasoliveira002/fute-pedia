@@ -6,7 +6,7 @@
 <img src="images/exemplos/exemplo1.png">
 </p>
 
-link para acessar -->
+link para acessar --> https://lucasoliveira002.github.io/fute-pedia/
 
 ---
 ### Ideia:
