@@ -1,0 +1,100 @@
+header {
+  background: #222;  /* cor de fundo só para visualizar */
+  color: white;      /* cor do texto */
+  height: 100px;
+}
+
+/* Header/Navegação */
+nav {
+  background: #222;
+  color: white;
+  padding: 0 50px; /* <-- espaço horizontal nas laterais */
+  max-width: 1200px;  /* limite de largura */
+  margin: 0 auto;     /* centraliza */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Título */
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #f1c40f;             /* amarelo destaque */
+}
+
+/* Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Efeito hover */
+nav a:hover {
+  background: #f1c40f;       /* fundo amarelo */
+  color: #222;               /* texto escuro */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #0c4783;
+  color: #ffffff;
+}
+
+.texto {
+  color: white;
+  padding: 0 0px; /* <-- espaço horizontal nas laterais */
+  max-width: 1200px;  /* limite de largura */
+  margin-left: 20px;    /*espaçamento com a tela*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brasileirao {
+  display: grid;
+  justify-content: center;
+  padding: 50px;
+  
+  margin-top: 4px;
+}
+
+.tema1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 97, 245);
+  padding: 15px;
+  gap: 50px;
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(5, 200px); /* 5 colunas */
+  background-color: rgb(73, 202, 38);
+  gap: 60px;
+  padding: 15px
+}
+
+.times a {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.times img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
