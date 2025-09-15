@@ -1,12 +1,15 @@
 header {
-  background: #222;  /* cor de fundo só para visualizar */
-  color: white;      /* cor do texto */
+  background: #09090A; 
+  color: white;    
   height: 100px;
+  position: sticky;
+  top: 0;          /* gruda no topo ao scrollar */
+  z-index: 1000;   /* opcional: garante que fica acima do conteúdo */
 }
 
 /* Header/Navegação */
 nav {
-  background: #222;
+  background: #09090A;
   color: white;
   padding: 0 50px; /* <-- espaço horizontal nas laterais */
   max-width: 1200px;  /* limite de largura */
@@ -19,7 +22,7 @@ nav {
 header h1 {
   margin: 0;
   font-size: 1.7rem;
-  color: #f1c40f;             /* amarelo destaque */
+  color: #E7DFC6;            
 }
 
 /* Links */
@@ -47,12 +50,12 @@ nav a:hover {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #0c4783;
+  background:  #9ECE9A;
   color: #ffffff;
 }
 
 .texto {
-  color: white;
+  color: #08090A;
   padding: 0 0px; /* <-- espaço horizontal nas laterais */
   max-width: 1200px;  /* limite de largura */
   margin-left: 20px;    /*espaçamento com a tela*/
@@ -72,17 +75,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(57, 97, 245);
+  background-color:  #E7DFC6;
   padding: 15px;
   gap: 50px;
+  color: #08090A;
+  border: solid #000000;
 }
 
 .times {
   display: grid;
   grid-template-columns: repeat(5, 200px); /* 5 colunas */
-  background-color: rgb(73, 202, 38);
+  background-color: #9AC4F8;
   gap: 60px;
-  padding: 15px
+  padding: 15px;
+  border: solid #000000;
+   /* tem que rever se é legal essa borda*/
+  
 }
 
 .times a {
@@ -91,6 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+   
 }
 
 .times img {
