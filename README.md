@@ -3,7 +3,7 @@
 ## A Enciclopédia do futebol Nacional e Internacional
 
 <p>
-<img src="images/exemplos/exemplo1.png">
+<img src="images/exemplos/exemplo2.png">
 </p>
 
 link para acessar --> https://lucasoliveira002.github.io/fute-pedia/

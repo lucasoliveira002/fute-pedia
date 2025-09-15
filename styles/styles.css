@@ -125,7 +125,7 @@ body {
 }
 
 .time:hover img {
-  transform: scale(1.1); /* zoom só na logo */
+  transform: scale(1.2); /* zoom só na logo */
 }
 
 
