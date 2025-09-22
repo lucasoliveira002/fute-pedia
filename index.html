@@ -1,336 +1,381 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fute-Pédia</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
+
 <body>
     <header>
         <div class="container">
-            <center><h1>Fute-Pédia</h1></center>
+            <center>
+                <h1>Fute-Pédia</h1>
+            </center>
             <nav>
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="contato.html">Contato</a>
                 <a href="login.html">Login</a>
             </nav>
-        </div>  
+        </div>
     </header>
     <main>
-        <div class="texto">
+        <div>
             <h2>Bem-vindo a Fute-Pédia!</h2>
-            <p> Nesse ambiente você encontra informações dos principais times do Brasil e do Mundo, além de seleções e jogadores.</p>
+            <p> Nesse ambiente você encontra informações dos principais times do Brasil e do Mundo, além de seleções e
+                jogadores.</p>
         </div>
 
-        <!--Serie A-->
-        <div class="brasileirao">
+        <div class="modal fade" id="zoomClubeModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="nomeClube" class="modal-title text-center w-100" ></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="imgClube" src="" alt="" style="width:150px; margin-bottom:15px;">
+                        <p id="cidadeClube"></p>
+                        <p id="descricaoClube" class="mt-2"></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container2">
+
+            <div class="menu">
+                <button id="A">Série A</button>
+                <button id="B">Série B</button>
+                <button id="C">Série C</button>
+                <button id="D">Série D</button>
+            </div>
+            <!--Serie A-->
+            <div class="brasileirao" id="serieA">
                 <div class="tema1">
-                <img src="https://upload.wikimedia.org/wikipedia/pt/7/75/Campeonato_Brasileiro_de_Futebol_de_2024_-_S%C3%A9rie_A.png" alt="logo-brasileirão" width="100" height="100">
-                <h2>Times do Brasileirão Série A</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg" alt="cbf" width="100"  height="100">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/7/75/Campeonato_Brasileiro_de_Futebol_de_2024_-_S%C3%A9rie_A.png"
+                        alt="logo-brasileirão" width="100" height="100">
+                    <h2>Times do Brasileirão Série A</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg"
+                        alt="cbf" width="100" height="100">
+                </div>
+                <div class="times">
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(0)">
+                            <img src="images/serieA/atleticomg.png" alt="Atlético-MG">
+                        </a>
+                        <p>Atlético Mineiro</p>
+                        <p>Belo Horizonte-MG</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(1)">
+                            <img src="images/serieA/bahia.png" alt="Bahia">
+                        </a>
+                        <p>Bahia</p>
+                        <p>Salvador-BA</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(2)">
+                            <img src="images/serieA/botafogo.png" alt="Botafogo">
+                        </a>
+                        <p>Botafogo</p>
+                        <p>Rio de Janeiro-RJ</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(3)">
+                            <img src="images/serieA/bragantino.png" alt="Bragantino">
+                        </a>
+                        <p>Bragantino</p>
+                        <p>Bragança Paulista-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(4)">
+                            <img src="images/serieA/ceara.png" alt="Ceará">
+                        </a>
+                        <p>Ceará</p>
+                        <p>Fortaleza-CE</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(5)">
+                            <img src="images/serieA/corinthians.png" alt="Corinthians">
+                        </a>
+                        <p>Corinthians</p>
+                        <p>São Paulo-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(6)">
+                            <img src="images/serieA/cruzeiro.png" alt="Cruzeiro">
+                        </a>
+                        <p>Cruzeiro</p>
+                        <p>Belo Horizonte-MG</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(7)">
+                            <img src="images/serieA/flamengo.png" alt="Flamengo">
+                        </a>
+                        <p>Flamengo</p>
+                        <p>Rio de Janeiro-RJ</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(8)">
+                            <img src="images/serieA/fluminense.png" alt="Fluminense">
+                        </a>
+                        <p>Fluminense</p>
+                        <p>Rio de Janeiro-RJ</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(9)">
+                            <img src="images/serieA/fortaleza.png" alt="Fortaleza">
+                        </a>
+                        <p>Fortaleza</p>
+                        <p>Fortaleza-CE</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(10)">
+                            <img src="images/serieA/gremio.png" alt="Grêmio">
+                        </a>
+                        <p>Grêmio</p>
+                        <p>Porto Alegre-RS</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(11)">
+                            <img src="images/serieA/internacional.png" alt="Internacional">
+                        </a>
+                        <p>Internacional</p>
+                        <p>Porto Alegre-RS</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(12)">
+                            <img src="images/serieA/juventude.png" alt="Juventude">
+                        </a>
+                        <p>Juventude</p>
+                        <p>Caxias do Sul-RS</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(13)">
+                            <img src="images/serieA/mirassol.png" alt="Mirassol">
+                        </a>
+                        <p>Mirassol</p>
+                        <p>Mirassol-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(14)">
+                            <img src="images/serieA/palmeiras.png" alt="Palmeiras">
+                        </a>
+                        <p>Palmeiras</p>
+                        <p>São Paulo-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(15)">
+                            <img src="images/serieA/santos.png" alt="Santos">
+                        </a>
+                        <p>Santos</p>
+                        <p>Santos-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(16)">
+                            <img src="images/serieA/saopaulo.png" alt="São Paulo">
+                        </a>
+                        <p>São Paulo</p>
+                        <p>São Paulo-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(17)">
+                            <img src="images/serieA/sport.png" alt="Sport">
+                        </a>
+                        <p>Sport</p>
+                        <p>Recife-PE</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(18)">
+                            <img src="images/serieA/vasco.png" alt="Vasco da Gama">
+                        </a>
+                        <p>Vasco da Gama</p>
+                        <p>Rio de Janeiro-RJ</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClube(19)">
+                            <img src="images/serieA/vitoria.png" alt="Vitória">
+                        </a>
+                        <p>Vitória</p>
+                        <p>Salvador-BA</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="times">
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/atleticomg.png" alt="Atlético-MG">
-                    </a>
-                    <p>Atlético Mineiro</p>
-                    <p>Belo Horizonte-MG</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/bahia.png" alt="Bahia">
-                    </a>
-                    <p>Bahia</p>
-                    <p>Salvador-BA</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/botafogo.png" alt="Botafogo">
-                    </a>
-                    <p>Botafogo</p>
-                    <p>Rio de Janeiro-RJ</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/bragantino.png" alt="Bragantino">
-                    </a>
-                    <p>Bragantino</p>
-                    <p>Bragança Paulista-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/ceara.png" alt="Ceará">
-                    </a>
-                    <p>Ceará</p>
-                    <p>Fortaleza-CE</p>
-                </div>
-                <div class="time">
-                    <a href="pages/serieA/corinthians.html">
-                        <img src="images/serieA/corinthians.png" alt="Corinthians">
-                    </a>
-                    <p>Corinthians</p>
-                    <p>São Paulo-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/cruzeiro.png" alt="Cruzeiro">
-                    </a>
-                    <p>Cruzeiro</p>
-                    <p>Belo Horizonte-MG</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/flamengo.png" alt="Flamengo">
-                    </a>
-                    <p>Flamengo</p>
-                    <p>Rio de Janeiro-RJ</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/fluminense.png" alt="Fluminense">
-                    </a>
-                    <p>Fluminense</p>
-                    <p>Rio de Janeiro-RJ</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/fortaleza.png" alt="Fortaleza">
-                    </a>
-                    <p>Fortaleza</p>
-                    <p>Fortaleza-CE</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/gremio.png" alt="Grêmio">
-                    </a>
-                    <p>Grêmio</p>
-                    <p>Porto Alegre-RS</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/internacional.png" alt="Internacional">
-                    </a>
-                    <p>Internacional</p>
-                    <p>Porto Alegre-RS</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/juventude.png" alt="Juventude">
-                    </a>
-                    <p>Juventude</p>
-                    <p>Caxias do Sul-RS</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/mirassol.png" alt="Mirassol">
-                    </a>
-                    <p>Mirassol</p>
-                    <p>Mirassol-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/palmeiras.png" alt="Palmeiras">
-                    </a>
-                    <p>Palmeiras</p>
-                    <p>São Paulo-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/santos.png" alt="Santos">
-                    </a>
-                    <p>Santos</p>
-                    <p>Santos-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/saopaulo.png" alt="São Paulo">
-                    </a>
-                    <p>São Paulo</p>
-                    <p>São Paulo-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/sport.png" alt="Sport">
-                    </a>
-                    <p>Sport</p>
-                    <p>Recife-PE</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/vasco.png" alt="Vasco">
-                    </a>
-                    <p>Vasco da Gama</p>
-                    <p>Rio de Janeiro-RJ</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieA/vitoria.png" alt="Vitória">
-                    </a>
-                    <p>Vitória</p>
-                    <p>Salvador-BA</p>
-                </div>
-            </div>
-        </div>
 
 
-        <!--Serie B-->
-        <div class="brasileirao">
+            <!--Serie B-->
+            <div class="brasileirao" id="serieB">
                 <div class="tema1">
-                <img src="https://upload.wikimedia.org/wikipedia/pt/b/b2/Campeonato_Brasileiro_de_Futebol_S%C3%A9rie_B_2022.png" alt="logo-brasileirão" width="100" height="100">
-                <h2>Times do Brasileirão Série B</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg" alt="cbf" width="100"  height="100">
-            </div>
-            <div class="times">
-                <div class="time">                   
-                    <a href="#">
-                        <img src="images/serieB/amazonas.png" alt="Amazonas">
-                    </a>
-                    <p>Amazonas</p>
-                    <p>Manaus-AM</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/b/b2/Campeonato_Brasileiro_de_Futebol_S%C3%A9rie_B_2022.png"
+                        alt="logo-brasileirão" width="100" height="100">
+                    <h2>Times do Brasileirão Série B</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg"
+                        alt="cbf" width="100" height="100">
                 </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/americamg.png" alt="América-MG">
-                    </a>
-                    <p>América-MG</p>
-                    <p>Belo Horizonte-MG</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/athletic.png" alt="Athletic">
-                    </a>
-                    <p>Athletic</p>
-                    <p>São João Nepomuceno-MG</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/athletico-pr.png" alt="Athletico-PR">
-                    </a>
-                    <p>Athletico-PR</p>
-                    <p>Curaçá-PR</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/atletico-go.png" alt="Atlético-GO">
-                    </a>
-                    <p>Atlético-GO</p>
-                    <p>Goiânia-GO</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/avai.png" alt="Avaí">
-                    </a>
-                    <p>Avaí</p>
-                    <p>Florianópolis-SC</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/botafogo-sp.png" alt="Botafogo-SP">
-                    </a>
-                    <p>Botafogo-SP</p>
-                    <p>Ribeirão Preto-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/chapecoense.png" alt="Chapecoense">
-                    </a>
-                    <p>Chapecoense</p>
-                    <p>Chapecó-SC</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/coritiba.png" alt="Coritiba">
-                    </a>
-                    <p>Coritiba</p>
-                    <p>Curitiba-PR</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/crb.png" alt="CRB">
-                    </a>
-                    <p>CRB</p>
-                    <p>Maceió-AL</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/criciuma.png" alt="Criciúma">
-                    </a>
-                    <p>Criciúma</p>
-                    <p>Criciúma-SC</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/cuiaba.png" alt="Cuiabá">
-                    </a>
-                    <p>Cuiabá</p>
-                    <p>Cuiabá-MT</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/ferroviaria.png" alt="Ferroviária">
-                    </a>
-                    <p>Ferroviária</p>
-                    <p>Araraquara-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/goias.png" alt="Goiás">
-                    </a>
-                    <p>Goiás</p>
-                    <p>Goiânia-GO</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/novorizontino.png" alt="Novorizontino">
-                    </a>
-                    <p>Novorizontino</p>
-                    <p>Novo Horizonte-SP</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/operario.png" alt="Operário-PR">
-                    </a>
-                    <p>Operário-PR</p>
-                    <p>Ponta Grossa-PR</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/paysandu.png" alt="Paysandu">
-                    </a>
-                    <p>Paysandu</p>
-                    <p>Belém-PA</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/remo.png" alt="Remo">
-                    </a>
-                    <p>Remo</p>
-                    <p>Belém-PA</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/vilanova.png" alt="Vila Nova">
-                    </a>
-                    <p>Vila Nova</p>
-                    <p>Goiânia-GO</p>
-                </div>
-                <div class="time">
-                    <a href="#">
-                        <img src="images/serieB/voltaredonda.png" alt="Volta Redonda">
-                    </a>
-                    <p>Volta Redonda</p>
-                    <p>Volta Redonda-RJ</p>
-                </div>
-                
+                <div class="times">
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/amazonas.png" alt="Amazonas">
+                        </a>
+                        <p>Amazonas</p>
+                        <p>Manaus-AM</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/americamg.png" alt="América-MG">
+                        </a>
+                        <p>América-MG</p>
+                        <p>Belo Horizonte-MG</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/athletic.png" alt="Athletic">
+                        </a>
+                        <p>Athletic</p>
+                        <p>São João Nepomuceno-MG</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/athletico-pr.png" alt="Athletico-PR">
+                        </a>
+                        <p>Athletico-PR</p>
+                        <p>Curaçá-PR</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/atletico-go.png" alt="Atlético-GO">
+                        </a>
+                        <p>Atlético-GO</p>
+                        <p>Goiânia-GO</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/avai.png" alt="Avaí">
+                        </a>
+                        <p>Avaí</p>
+                        <p>Florianópolis-SC</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/botafogo-sp.png" alt="Botafogo-SP">
+                        </a>
+                        <p>Botafogo-SP</p>
+                        <p>Ribeirão Preto-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/chapecoense.png" alt="Chapecoense">
+                        </a>
+                        <p>Chapecoense</p>
+                        <p>Chapecó-SC</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/coritiba.png" alt="Coritiba">
+                        </a>
+                        <p>Coritiba</p>
+                        <p>Curitiba-PR</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/crb.png" alt="CRB">
+                        </a>
+                        <p>CRB</p>
+                        <p>Maceió-AL</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/criciuma.png" alt="Criciúma">
+                        </a>
+                        <p>Criciúma</p>
+                        <p>Criciúma-SC</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/cuiaba.png" alt="Cuiabá">
+                        </a>
+                        <p>Cuiabá</p>
+                        <p>Cuiabá-MT</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/ferroviaria.png" alt="Ferroviária">
+                        </a>
+                        <p>Ferroviária</p>
+                        <p>Araraquara-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/goias.png" alt="Goiás">
+                        </a>
+                        <p>Goiás</p>
+                        <p>Goiânia-GO</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/novorizontino.png" alt="Novorizontino">
+                        </a>
+                        <p>Novorizontino</p>
+                        <p>Novo Horizonte-SP</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/operario.png" alt="Operário-PR">
+                        </a>
+                        <p>Operário-PR</p>
+                        <p>Ponta Grossa-PR</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/paysandu.png" alt="Paysandu">
+                        </a>
+                        <p>Paysandu</p>
+                        <p>Belém-PA</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/remo.png" alt="Remo">
+                        </a>
+                        <p>Remo</p>
+                        <p>Belém-PA</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/vilanova.png" alt="Vila Nova">
+                        </a>
+                        <p>Vila Nova</p>
+                        <p>Goiânia-GO</p>
+                    </div>
+                    <div class="time">
+                        <a href="#">
+                            <img src="images/serieB/voltaredonda.png" alt="Volta Redonda">
+                        </a>
+                        <p>Volta Redonda</p>
+                        <p>Volta Redonda-RJ</p>
+                    </div>
 
+
+                </div>
             </div>
         </div>
 
 
-        
+
     </main>
+
+    <script src="/scripts/brasileirão.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

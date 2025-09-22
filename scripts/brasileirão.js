@@ -1,0 +1,165 @@
+document.querySelectorAll(".menu button").forEach(botao => {
+    botao.addEventListener("click", exibirTimes);
+});
+
+// function exibirTimes(event){
+//     let exibir = event.target.id; // pega o id do botão clicado
+
+//     if (exibir === "A"){
+//         document.getElementById("serieA").style.display="block"
+//         // exemplo: remove um elemento que tenha id "serieB"
+//         document.getElementById("serieB").style.display = "none";
+//     }else if(exibir === "B"){
+//         document.getElementById("serieB").style.display="block"
+//         document.getElementById("serieA").style.display = "none";
+//     }
+// }
+
+function exibirTimes(event) {
+    let exibir = event.target.id; // pega o id do botão clicado
+    let series = ["A", "B", "C", "D"];
+
+    series.forEach(s => {
+        let div = document.getElementById("serie" + s);
+        if (s === exibir) {
+            div.style.display = "block"; // mostra só a clicada
+        } else {
+            div.style.display = "none";  // esconde as outras
+        }
+    });
+}
+
+//Zoom
+let clubes = [
+    {
+        nome: "Atlético Mineiro",
+        cidade: "Belo Horizonte-MG",
+        img: "images/serieA/atleticomg.png",
+        descricao: "Fundado em 1908, o Clube Atlético Mineiro, mais conhecido como Galo, é um dos gigantes do futebol brasileiro. De Belo Horizonte, o clube tem uma das torcidas mais apaixonadas do país, a famosa Massa. Sua rica história inclui grandes títulos, como o Campeonato Brasileiro de 1971 e o mais recente, em 2021. O maior feito internacional do clube é a conquista da Copa Libertadores da América em 2013, além da Copa do Brasil e outros troféus. O Galo é reconhecido pela sua força e garra em campo, características que o tornaram um dos times mais respeitados do Brasil."
+    },
+    {
+        nome: "Esporte Clube Bahia",
+        cidade: "Salvador-BA",
+        img: "images/serieA/bahia.png",
+        descricao: "O Esporte Clube Bahia, conhecido como Bahia ou Esquadrão de Aço, é um dos clubes mais tradicionais do Nordeste e do Brasil, com uma história marcada por grandes conquistas. Fundado em 1931 em Salvador, o tricolor de aço é um símbolo da paixão e da cultura do povo baiano. O Bahia se destaca como o primeiro campeão brasileiro, ao conquistar a Taça Brasil de 1959, além de ser bicampeão nacional com o título do Campeonato Brasileiro de 1988. O clube também possui um impressionante número de títulos do Campeonato Baiano. Sua torcida, uma das maiores e mais vibrantes do país, é conhecida por empurrar o time em todos os jogos na Arena Fonte Nova, fazendo do Bahia um clube de grande respeito nacional."
+    },
+    {
+        nome: "Botafogo de Futebol e Regatas",
+        cidade: "Rio de Janeiro-RJ",
+        img: "images/serieA/botafogo.png",
+        descricao: "O Botafogo de Futebol e Regatas, ou simplesmente Botafogo, é um dos clubes mais tradicionais do Rio de Janeiro e do Brasil. Fundado oficialmente em 1904, o clube é conhecido por sua história de grandes craques, como Garrincha, e por ter uma das torcidas mais apaixonadas do país. O Botafogo conquistou o Campeonato Brasileiro de 1995, além de diversos títulos estaduais e uma Copa Conmebol. A estrela solitária em seu distintivo simboliza a trajetória de superação e a glória do clube, que continua sendo uma referência de futebol e paixão no cenário esportivo brasileiro."
+    },
+    {
+        nome: "Red Bull Bragantino",
+        cidade: "Bragança Paulista-SP",
+        img: "images/serieA/bragantino.png",
+        descricao: "O Red Bull Bragantino, ou Massa Bruta, é um clube com uma história de transformação no futebol brasileiro. Fundado em 1928, o Bragantino se destacou na década de 1990, quando conquistou o Campeonato Paulista de 1990 e foi vice-campeão brasileiro em 1991. Em 2019, o clube firmou uma parceria com a empresa de energéticos Red Bull, que resultou em uma injeção de investimentos e uma completa reestruturação. Desde então, o time de Bragança Paulista se consolidou na Série A, chegando à final da Copa Sul-Americana em 2021 e se tornando uma força competitiva no cenário nacional."
+    },
+    {
+        nome: "Ceará Sporting Club",
+        cidade: "Fortaleza-CE",
+        img: "images/serieA/ceara.png",
+        descricao: "O Ceará Sporting Club, conhecido como Vovô, é um dos clubes mais populares e tradicionais do Nordeste. Fundado em 1914 em Fortaleza, o clube se destaca pela sua resiliência e a paixão de sua torcida, que o acompanha em todos os momentos. O Ceará tem uma história de sucesso em âmbito regional, com um grande número de títulos do Campeonato Cearense. Em sua trajetória nacional, o clube teve participações importantes na Série A do Campeonato Brasileiro e chegou a disputar a final da Copa do Brasil em 1994. Mais recentemente, o clube conquistou a Copa do Nordeste em 2015 e 2020, consolidando sua força na região."
+    },
+    {
+        nome: "Sport Club Corinthians Paulista",
+        cidade: "São Paulo-SP",
+        img: "images/serieA/corinthians.png",
+        descricao: "O Sport Club Corinthians Paulista, ou Timão, é um dos clubes mais populares do Brasil, com uma das maiores e mais apaixonadas torcidas do mundo, o 'Bando de Loucos'. Fundado em 1910, o Corinthians é reconhecido por sua história de superação e títulos. A galeria de troféus do clube inclui sete Campeonatos Brasileiros, três Copas do Brasil, além da Copa Libertadores da América e do Mundial de Clubes da FIFA, ambos conquistados de forma épica em 2012. Sua paixão e garra dentro de campo são marcas registradas, fazendo do Corinthians uma das maiores referências do futebol nacional e internacional."
+    },
+    {
+        nome: "Cruzeiro",
+        cidade: "Belo Horizonte-MG",
+        img: "images/serieA/cruzeiro.png",
+        descricao: "Esporte Clube, conhecido como a Raposa, é um dos gigantes do futebol brasileCruzeiroiro. Fundado em 1921 em Belo Horizonte, o clube se consolidou como um dos mais vitoriosos do país, com uma história rica em títulos. O Cruzeiro é o maior campeão da Copa do Brasil, com seis conquistas, além de possuir quatro títulos do Campeonato Brasileiro e duas Copas Libertadores da América, em 1976 e 1997. Após um período de três anos na Série B, a equipe retornou à elite do futebol brasileiro em 2023, demonstrando a resiliência e a força de sua torcida, a Nação Azul, que faz do Cruzeiro um dos times mais respeitados do cenário nacional."
+    },
+    {
+        nome: "Flamengo",
+        cidade: "Rio de Janeiro-RJ",
+        img: "images/serieA/flamengo.png",
+        descricao: "O Clube de Regatas do Flamengo, com seu icônico manto rubro-negro, transcende o campo de jogo para se tornar um dos maiores fenômenos do futebol mundial. Sua força reside em uma torcida apaixonada, a Nação Rubro-Negra, que impulsiona o clube a uma história de glórias. Com inúmeros títulos do Campeonato Brasileiro e da Copa Libertadores da América, o Flamengo se estabeleceu como um gigante, simbolizando garra e a paixão inabalável de milhões de torcedores."
+    },
+    {
+        nome: "Fluminense",
+        cidade: "Rio de Janeiro-RJ",
+        img: "images/serieA/fluminense.png",
+        descricao: "Fluminense, fundado em 1902, é tradicional do Rio de Janeiro e já conquistou quatro vezes o Campeonato Brasileiro."
+    },
+    {
+        nome: "Fortaleza",
+        cidade: "Fortaleza-CE",
+        img: "images/serieA/fortaleza.png",
+        descricao: "O Fortaleza Esporte Clube, fundado em 1918, é conhecido como Tricolor do Pici e tem grande torcida no Ceará."
+    },
+    {
+        nome: "Grêmio",
+        cidade: "Porto Alegre-RS",
+        img: "images/serieA/gremio.png",
+        descricao: "Grêmio, fundado em 1903, tricampeão da Copa Libertadores e com destaque histórico no futebol brasileiro."
+    },
+    {
+        nome: "Internacional",
+        cidade: "Porto Alegre-RS",
+        img: "images/serieA/internacional.png",
+        descricao: "Fundado em 1909, o Internacional é um clube gaúcho com três títulos de Libertadores e grande torcida."
+    },
+    {
+        nome: "Juventude",
+        cidade: "Caxias do Sul-RS",
+        img: "images/serieA/juventude.png",
+        descricao: "Juventude, fundado em 1913, é um clube tradicional do Rio Grande do Sul com participações esporádicas na Série A."
+    },
+    {
+        nome: "Mirassol",
+        cidade: "Mirassol-SP",
+        img: "images/serieA/mirassol.png",
+        descricao: "Mirassol, fundado em 1925, é destaque no interior paulista e vem conquistando espaço no futebol nacional."
+    },
+    {
+        nome: "Palmeiras",
+        cidade: "São Paulo-SP",
+        img: "images/serieA/palmeiras.png",
+        descricao: "Palmeiras, fundado em 1914, é um dos clubes mais vitoriosos do Brasil, campeão da Copa Libertadores e Brasileiro múltiplas vezes."
+    },
+    {
+        nome: "Santos",
+        cidade: "Santos-SP",
+        img: "images/serieA/santos.png",
+        descricao: "Santos, fundado em 1912, revelou Pelé e é famoso internacionalmente por sua história de títulos e jogadores lendários."
+    },
+    {
+        nome: "São Paulo",
+        cidade: "São Paulo-SP",
+        img: "images/serieA/saopaulo.png",
+        descricao: "São Paulo FC, fundado em 1930, tricampeão mundial de clubes e com grande tradição no futebol paulista e brasileiro."
+    },
+    {
+        nome: "Sport",
+        cidade: "Recife-PE",
+        img: "images/serieA/sport.png",
+        descricao: "Sport Club do Recife, fundado em 1905, é o clube mais vitorioso de Pernambuco e possui títulos nacionais e regionais."
+    },
+    {
+        nome: "Vasco da Gama",
+        cidade: "Rio de Janeiro-RJ",
+        img: "images/serieA/vasco.png",
+        descricao: "Vasco da Gama, fundado em 1898, tem grande torcida e uma história rica de conquistas nacionais e internacionais."
+    },
+    {
+        nome: "Vitória",
+        cidade: "Salvador-BA",
+        img: "images/serieA/vitoria.png",
+        descricao: "Esporte Clube Vitória, fundado em 1899, é um dos principais clubes da Bahia e tradicional no futebol nordestino."
+    }
+];
+
+function zoomClube(posicao) {
+    let clube = clubes[posicao];
+
+    document.getElementById("nomeClube").innerHTML = clube.nome;
+    document.getElementById("cidadeClube").innerHTML = clube.cidade;
+    document.getElementById("imgClube").src = clube.img;
+    document.getElementById("descricaoClube").innerHTML = clube.descricao || "";
+
+    new bootstrap.Modal('#zoomClubeModal').show();
+}

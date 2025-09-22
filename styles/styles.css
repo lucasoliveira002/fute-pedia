@@ -63,6 +63,16 @@ body {
   align-items: center;
 }
 
+.container2 {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 50px;
+}
 .brasileirao {
   display: grid;
   justify-content: center;
@@ -134,3 +144,11 @@ body {
   font-size: 14px;
   color: #000;
 }
+
+#serieA {
+    display: block; /* aparece logo de cara */
+}
+#serieB, #serieC, #serieD {
+    display: none;  /* ficam escondidas */
+}
+
