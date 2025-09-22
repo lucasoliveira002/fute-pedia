@@ -154,6 +154,7 @@ let clubes = [
 ];
 
 function zoomClube(posicao) {
+    event.preventDefault(); // evita que a página suba
     let clube = clubes[posicao];
 
     document.getElementById("nomeClube").innerHTML = clube.nome;
