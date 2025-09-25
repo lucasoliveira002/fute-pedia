@@ -21,7 +21,6 @@
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="contato.html">Contato</a>
-                <a href="login.html">Login</a>
             </nav>
         </div>
     </header>
@@ -35,18 +34,27 @@
         <div class="modal fade" id="zoomClubeModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h5 id="nomeClube" class="modal-title text-center w-100"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
+
                     <div class="modal-body text-center">
                         <img id="imgClube" src="" alt="" style="width:150px; margin-bottom:15px;">
                         <p id="cidadeClube"></p>
                         <p id="descricaoClube" class="mt-2"></p>
+
+                        <a id="btnSaibaMais" href="#" class="btn btn-primary px-4 py-2 rounded-pill shadow">
+                            Saiba mais
+                        </a>
+
                     </div>
+
                 </div>
             </div>
         </div>
+
 
 
         <div class="container2">
@@ -220,149 +228,864 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg"
                         alt="cbf" width="100" height="100">
                 </div>
-                <div class="times">
+                <div class="times" id="brasileiraoB">
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(0, event)">
                             <img src="images/serieB/amazonas.png" alt="Amazonas">
                         </a>
                         <p>Amazonas</p>
                         <p>Manaus-AM</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(1, event)">
                             <img src="images/serieB/americamg.png" alt="América-MG">
                         </a>
                         <p>América-MG</p>
                         <p>Belo Horizonte-MG</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(2, event)">
                             <img src="images/serieB/athletic.png" alt="Athletic">
                         </a>
                         <p>Athletic</p>
                         <p>São João Nepomuceno-MG</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(3, event)">
                             <img src="images/serieB/athletico-pr.png" alt="Athletico-PR">
                         </a>
                         <p>Athletico-PR</p>
                         <p>Curaçá-PR</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(4, event)">
                             <img src="images/serieB/atletico-go.png" alt="Atlético-GO">
                         </a>
                         <p>Atlético-GO</p>
                         <p>Goiânia-GO</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(5, event)">
                             <img src="images/serieB/avai.png" alt="Avaí">
                         </a>
                         <p>Avaí</p>
                         <p>Florianópolis-SC</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(6, event)">
                             <img src="images/serieB/botafogo-sp.png" alt="Botafogo-SP">
                         </a>
                         <p>Botafogo-SP</p>
                         <p>Ribeirão Preto-SP</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(7, event)">
                             <img src="images/serieB/chapecoense.png" alt="Chapecoense">
                         </a>
                         <p>Chapecoense</p>
                         <p>Chapecó-SC</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(8, event)">
                             <img src="images/serieB/coritiba.png" alt="Coritiba">
                         </a>
                         <p>Coritiba</p>
                         <p>Curitiba-PR</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(9, event)">
                             <img src="images/serieB/crb.png" alt="CRB">
                         </a>
                         <p>CRB</p>
                         <p>Maceió-AL</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(10, event)">
                             <img src="images/serieB/criciuma.png" alt="Criciúma">
                         </a>
                         <p>Criciúma</p>
                         <p>Criciúma-SC</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(11, event)">
                             <img src="images/serieB/cuiaba.png" alt="Cuiabá">
                         </a>
                         <p>Cuiabá</p>
                         <p>Cuiabá-MT</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(12, event)">
                             <img src="images/serieB/ferroviaria.png" alt="Ferroviária">
                         </a>
                         <p>Ferroviária</p>
                         <p>Araraquara-SP</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(13, event)">
                             <img src="images/serieB/goias.png" alt="Goiás">
                         </a>
                         <p>Goiás</p>
                         <p>Goiânia-GO</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(14, event)">
                             <img src="images/serieB/novorizontino.png" alt="Novorizontino">
                         </a>
                         <p>Novorizontino</p>
                         <p>Novo Horizonte-SP</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(15, event)">
                             <img src="images/serieB/operario.png" alt="Operário-PR">
                         </a>
                         <p>Operário-PR</p>
                         <p>Ponta Grossa-PR</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(16, event)">
                             <img src="images/serieB/paysandu.png" alt="Paysandu">
                         </a>
                         <p>Paysandu</p>
                         <p>Belém-PA</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(17, event)">
                             <img src="images/serieB/remo.png" alt="Remo">
                         </a>
                         <p>Remo</p>
                         <p>Belém-PA</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(18, event)">
                             <img src="images/serieB/vilanova.png" alt="Vila Nova">
                         </a>
                         <p>Vila Nova</p>
                         <p>Goiânia-GO</p>
                     </div>
+
                     <div class="time">
-                        <a href="#">
+                        <a href="#" onclick="zoomClubeB(19, event)">
                             <img src="images/serieB/voltaredonda.png" alt="Volta Redonda">
                         </a>
                         <p>Volta Redonda</p>
                         <p>Volta Redonda-RJ</p>
                     </div>
+                </div>
+
+            </div>
 
 
+            <!--Serie C-->
+            <div class="brasileirao" id="serieC">
+                <div class="tema1">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/b/ba/Campeonato_Brasileiro_de_Futebol_de_2022_-_S%C3%A9rie_C.png"
+                        alt="logo-brasileirão" width="100" height="100">
+                    <h2>Times do Brasileirão Série C</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg"
+                        alt="cbf" width="100" height="100">
+                </div>
+                <div class="times" id="brasileiraoC">
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(0, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/ABC_FC_%28E%29_-_RN.svg/1515px-ABC_FC_%28E%29_-_RN.svg.png"
+                                alt="ABC">
+                        </a>
+                        <p>ABC</p>
+                        <p>Rio Grande do Norte</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(1, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/8/85/An%C3%A1polis-GO_%28BRA%29.png"
+                                alt="Anápolis">
+                        </a>
+                        <p>Anápolis</p>
+                        <p>Goiás</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(2, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/BotafogoPB_logo.png"
+                                alt="Botafogo-PB">
+                        </a>
+                        <p>Botafogo-PB</p>
+                        <p>Paraíba</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(3, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Brusque_FC_-_SC.svg/1474px-Brusque_FC_-_SC.svg.png"
+                                alt="Brusque">
+                        </a>
+                        <p>Brusque</p>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(4, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/0f/SER_Caxias_do_Sul.svg/2077px-SER_Caxias_do_Sul.svg.png"
+                                alt="Caxias">
+                        </a>
+                        <p>Caxias</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(5, event)">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkg-k0mOxTIROwth-qan25mJGN8MUQ81YzQ&s"
+                                alt="Confiança">
+                        </a>
+                        <p>Confiança</p>
+                        <p>Sergipe</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(6, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/b/b2/CSAal.png" alt="CSA">
+                        </a>
+                        <p>CSA</p>
+                        <p>Alagoas</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(7, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/7/7b/Figueirense.png" alt="Figueirense">
+                        </a>
+                        <p>Figueirense</p>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(8, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/8/86/Floresta_Esporte_Clube.png"
+                                alt="Floresta">
+                        </a>
+                        <p>Floresta</p>
+                        <p>Ceará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(9, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Guarani_FC_%28E%29_-_SP.svg/980px-Guarani_FC_%28E%29_-_SP.svg.png"
+                                alt="Guarani">
+                        </a>
+                        <p>Guarani</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(10, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/AOItabaiana.png" alt="Itabaiana">
+                        </a>
+                        <p>Itabaiana</p>
+                        <p>Sergipe</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(11, event)">
+                            <img src="https://upload.wikimedia.org/wikinews/pt/thumb/a/a0/Ituano_logo.svg/2008px-Ituano_logo.svg.png"
+                                alt="Ituano">
+                        </a>
+                        <p>Ituano</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(12, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/8/83/LondrinaEC.png" alt="Londrina">
+                        </a>
+                        <p>Londrina</p>
+                        <p>Paraná</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(13, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Mfc_monocromia_positiva.png"
+                                alt="Maringá">
+                        </a>
+                        <p>Maringá</p>
+                        <p>Paraná</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(14, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/de/Simbolo-escudo-nautico.png"
+                                alt="Náutico">
+                        </a>
+                        <p>Náutico</p>
+                        <p>Pernambuco</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(15, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Escudo_Oficial_Ponte_Preta.png"
+                                alt="Ponte Preta">
+                        </a>
+                        <p>Ponte Preta</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(16, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/4/4b/Retr%C3%B4_FC_Brasil-PE_%28BRA%29.png"
+                                alt="Retrô">
+                        </a>
+                        <p>Retrô</p>
+                        <p>Pernambuco</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(17, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/e/e7/S%C3%A3o_Bernardo_Futebol_Clube_Logo.PNG"
+                                alt="São Bernardo">
+                        </a>
+                        <p>São Bernardo</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(18, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/8/85/TombenseFC.png" alt="Tombense">
+                        </a>
+                        <p>Tombense</p>
+                        <p>Minas Gerais</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeC(19, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Ypiranga_Futebol_Clube.png"
+                                alt="Ypiranga-RS">
+                        </a>
+                        <p>Ypiranga-RS</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--Serie D-->
+            <div class="brasileirao" id="serieD">
+                <div class="tema1">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e6/Campeonato_Brasileiro_de_Futebol_de_2022_-_S%C3%A9rie_D.png/250px-Campeonato_Brasileiro_de_Futebol_de_2022_-_S%C3%A9rie_D.png"
+                        alt="logo-brasileirão" width="100" height="100">
+                    <h2>Times do Brasileirão Série D</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Brazilian_Football_Confederation_logo.svg"
+                        alt="cbf" width="100" height="100">
+                </div>
+                <div class="times" id="brasileiraoD">
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(0, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Independ%C3%AAncia_Futebol_Clube.svg/800px-Independ%C3%AAncia_Futebol_Clube.svg.png"
+                                alt="Independência">
+                        </a>
+                        <p>Independência</p>
+                        <p>Acre</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(1, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Humait%C3%A1_FC_2023.svg/800px-Humait%C3%A1_FC_2023.svg.png"
+                                alt="Humaitá">
+                        </a>
+                        <p>Humaitá</p>
+                        <p>Acre</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(2, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/a/a4/Manaus_Futebol_Clube.png"
+                                alt="Manaus">
+                        </a>
+                        <p>Manaus</p>
+                        <p>Amazonas</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(3, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Manauara_Esporte_Clube.svg/800px-Manauara_Esporte_Clube.svg.png"
+                                alt="Manauara">
+                        </a>
+                        <p>Manauara</p>
+                        <p>Amazonas</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(4, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/d3/Tuna_Luso.png" alt="Tuna Luso">
+                        </a>
+                        <p>Tuna Luso</p>
+                        <p>Pará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(5, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/1/18/%C3%81guia_de_Marab%C3%A1.png"
+                                alt="Águia de Marabá">
+                        </a>
+                        <p>Águia de Marabá</p>
+                        <p>Pará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(6, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Gr%C3%AAmio_Atl%C3%A9tico_Sampaio_logo.png"
+                                alt="GAS">
+                        </a>
+                        <p>GAS</p>
+                        <p>Roraima</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(7, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/1/11/Trem_Desportivo_Clube.png"
+                                alt="Trem">
+                        </a>
+                        <p>Trem</p>
+                        <p>Amapá</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(8, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Maracan%C3%A3_Esporte_Clube.svg"
+                                alt="Maracanã">
+                        </a>
+                        <p>Maracanã</p>
+                        <p>Ceará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(9, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d9/Iguatu.png/200px-Iguatu.png"
+                                alt="Iguatu">
+                        </a>
+                        <p>Iguatu</p>
+                        <p>Ceará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(10, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Sampaio_Corr%C3%AAa_Futebol_Clube_%28E%29.png"
+                                alt="Sampaio Corrêa">
+                        </a>
+                        <p>Sampaio Corrêa</p>
+                        <p>Maranhão</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(11, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Escudo_do_Maranh%C3%A3o_Atl%C3%A9tico_Clube.svg/800px-Escudo_do_Maranh%C3%A3o_Atl%C3%A9tico_Clube.svg.png"
+                                alt="Maranhão">
+                        </a>
+                        <p>Maranhão</p>
+                        <p>Maranhão</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(12, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/b/b5/Associa%C3%A7%C3%A3o_Atl%C3%A9tica_de_Altos.png"
+                                alt="Altos">
+                        </a>
+                        <p>Altos</p>
+                        <p>Piauí</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(13, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/44/Parnahyba.png/200px-Parnahyba.png"
+                                alt="Parnahyba">
+                        </a>
+                        <p>Parnahyba</p>
+                        <p>Piauí</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(14, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Tocantin%C3%B3polis.png/200px-Tocantin%C3%B3polis.png"
+                                alt="Tocantinópolis">
+                        </a>
+                        <p>Tocantinópolis</p>
+                        <p>Tocantins</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(15, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e5/Sociedade_Imperatriz_de_Desportos.png/200px-Sociedade_Imperatriz_de_Desportos.png"
+                                alt="Imperatriz">
+                        </a>
+                        <p>Imperatriz</p>
+                        <p>Maranhão</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(16, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/c/c8/Escudo_do_Ferrovi%C3%A1rio_Atl%C3%A9tico_Clube_2018.png"
+                                alt="Ferroviário">
+                        </a>
+                        <p>Ferroviário</p>
+                        <p>Ceará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(17, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Horizonte.png/200px-Horizonte.png"
+                                alt="Horizonte">
+                        </a>
+                        <p>Horizonte</p>
+                        <p>Ceará</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(18, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sousa_Esporte_Clube.svg/800px-Sousa_Esporte_Clube.svg.png"
+                                alt="Sousa">
+                        </a>
+                        <p>Sousa</p>
+                        <p>Paraíba</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(19, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Treze.svg/800px-Treze.svg.png"
+                                alt="Treze">
+                        </a>
+                        <p>Treze</p>
+                        <p>Paraíba</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(20, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Santa_Cruz_Futebol_Clube_PE.svg/1865px-Santa_Cruz_Futebol_Clube_PE.svg.png"
+                                alt="Santa Cruz">
+                        </a>
+                        <p>Santa Cruz</p>
+                        <p>Pernambuco</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(21, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Central_Sport_Club.svg/800px-Central_Sport_Club.svg.png"
+                                alt="Central">
+                        </a>
+                        <p>Central</p>
+                        <p>Pernambuco</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(22, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Am%C3%A9rica-RN_2023.svg/1050px-Am%C3%A9rica-RN_2023.svg.png"
+                                alt="América-RN">
+                        </a>
+                        <p>América-RN</p>
+                        <p>Rio Grande do Norte</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(23, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/91/Santa_Cruz-RN.png/200px-Santa_Cruz-RN.png"
+                                alt="Santa Cruz-RN">
+                        </a>
+                        <p>Santa Cruz-RN</p>
+                        <p>Rio Grande do Norte</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(24, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Agremiação_Sportiva_Arapiraquense_logo.png"
+                                alt="ASA">
+                        </a>
+                        <p>ASA</p>
+                        <p>Alagoas</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(25, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Penedense_Alagoas.svg/800px-Penedense_Alagoas.svg.png"
+                                alt="Penedense">
+                        </a>
+                        <p>Penedense</p>
+                        <p>Alagoas</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(26, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Club_Sportivo_Sergipe.svg/800px-Club_Sportivo_Sergipe.svg.png"
+                                alt="Sergipe">
+                        </a>
+                        <p>Sergipe</p>
+                        <p>Sergipe</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(27, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/b/b3/Lagarto_Futebol_Clube.png"
+                                alt="Lagarto">
+                        </a>
+                        <p>Lagarto</p>
+                        <p>Sergipe</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(28, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/c/c3/Barcelona_de_Ilh%C3%A9us.png/200px-Barcelona_de_Ilh%C3%A9us.png"
+                                alt="Barcelona de Ilhéus">
+                        </a>
+                        <p>Barcelona de Ilhéus</p>
+                        <p>Bahia</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(29, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Associa%C3%A7%C3%A3o_Desportiva_Jequi%C3%A9.svg/800px-Associa%C3%A7%C3%A3o_Desportiva_Jequi%C3%A9.svg.png"
+                                alt="Jequié">
+                        </a>
+                        <p>Jequié</p>
+                        <p>Bahia</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(30, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/Juazeirense.png/200px-Juazeirense.png"
+                                alt="Juazeirense">
+                        </a>
+                        <p>Juazeirense</p>
+                        <p>Bahia</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(31, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Uniao_Atl%C3%A9tica_Clube_S%C3%A3o_Jos%C3%A9_da_Praia.png"
+                                alt="União-TO">
+                        </a>
+                        <p>União-TO</p>
+                        <p>Tocantins</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(32, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/36/Ceil%C3%A2ndia_Esporte_Clube.png/200px-Ceil%C3%A2ndia_Esporte_Clube.png"
+                                alt="Ceilândia">
+                        </a>
+                        <p>Ceilândia</p>
+                        <p>Distrito Federal</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(33, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/8c/Capital_FC.png/200px-Capital_FC.png"
+                                alt="Capital-DF">
+                        </a>
+                        <p>Capital-DF</p>
+                        <p>Distrito Federal</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(34, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/e/e6/Aparecidense.png/200px-Aparecidense.png"
+                                alt="Aparecidense">
+                        </a>
+                        <p>Aparecidense</p>
+                        <p>Goiás</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(35, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Goi%C3%A2nia_Esporte_Clube.svg/800px-Goi%C3%A2nia_Esporte_Clube.svg.png"
+                                alt="Goiânia">
+                        </a>
+                        <p>Goiânia</p>
+                        <p>Goiás</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(36, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Mixto_Esporte_Clube_logo.png"
+                                alt="Mixto-MT">
+                        </a>
+                        <p>Mixto-MT</p>
+                        <p>Mato Grosso</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(37, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Luverdense_Esporte_Clube_logo.svg/800px-Luverdense_Esporte_Clube_logo.svg.png"
+                                alt="Luverdense">
+                        </a>
+                        <p>Luverdense</p>
+                        <p>Mato Grosso</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(38, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/17/Porto_Velho_Esporte_Clube.png/200px-Porto_Velho_Esporte_Clube.png"
+                                alt="Porto Velho">
+                        </a>
+                        <p>Porto Velho</p>
+                        <p>Rondônia</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(39, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/00/Goian%C3%A9sia_Esporte_Clube.png/200px-Goian%C3%A9sia_Esporte_Clube.png"
+                                alt="Goianésia">
+                        </a>
+                        <p>Goianésia</p>
+                        <p>Goiás</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(40, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rio_Branco_Esporte_Clube.svg/800px-Rio_Branco_Esporte_Clube.svg.png"
+                                alt="Rio Branco-ES">
+                        </a>
+                        <p>Rio Branco-ES</p>
+                        <p>Espírito Santo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(41, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/d7/Porto_Vit%C3%B3ria_Futebol_Clube.png"
+                                alt="Porto Vitória">
+                        </a>
+                        <p>Porto Vitória</p>
+                        <p>Espírito Santo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(42, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/36/Nova_Igua%C3%A7u_Futebol_Clube.svg/800px-Nova_Igua%C3%A7u_Futebol_Clube.svg.png"
+                                alt="Nova Iguaçu">
+                        </a>
+                        <p>Nova Iguaçu</p>
+                        <p>Rio de Janeiro</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(43, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f6/Boavista_Sport_Club_2023.png/200px-Boavista_Sport_Club_2023.png"
+                                alt="Boavista">
+                        </a>
+                        <p>Boavista</p>
+                        <p>Rio de Janeiro</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(44, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/3/30/Pouso_Alegre_Futebol_Clube.png"
+                                alt="Pouso Alegre">
+                        </a>
+                        <p>Pouso Alegre</p>
+                        <p>Minas Gerais</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(45, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Maric%C3%A1_Futebol_Clube.svg/800px-Maric%C3%A1_Futebol_Clube.svg.png"
+                                alt="Maricá">
+                        </a>
+                        <p>Maricá</p>
+                        <p>Rio de Janeiro</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(46, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Portuguesa_de_Desportos_logo.svg/800px-Portuguesa_de_Desportos_logo.svg.png"
+                                alt="Portuguesa">
+                        </a>
+                        <p>Portuguesa</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(47, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/1d/%C3%81gua_Santa_2023.png/200px-%C3%81gua_Santa_2023.png"
+                                alt="Água Santa">
+                        </a>
+                        <p>Água Santa</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(48, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/23/Goiatuba_Esporte_Clube.png/200px-Goiatuba_Esporte_Clube.png"
+                                alt="Goiatuba">
+                        </a>
+                        <p>Goiatuba</p>
+                        <p>Goiás</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(49, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/d/d9/Itabirito_FC.png/200px-Itabirito_FC.png"
+                                alt="Itabirito">
+                        </a>
+                        <p>Itabirito</p>
+                        <p>Minas Gerais</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(50, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/4b/AA_Inter_de_Limeira_logo.png/200px-AA_Inter_de_Limeira_logo.png"
+                                alt="Inter de Limeira">
+                        </a>
+                        <p>Inter de Limeira</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(51, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/f/fa/Atl%C3%A9tico_Monte_Azul.png"
+                                alt="Monte Azul">
+                        </a>
+                        <p>Monte Azul</p>
+                        <p>São Paulo</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(52, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Oper%C3%A1rio_Futebol_Clube_MS.svg/800px-Oper%C3%A1rio_Futebol_Clube_MS.svg.png"
+                                alt="Operário-MS">
+                        </a>
+                        <p>Operário-MS</p>
+                        <p>Mato Grosso do Sul</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(53, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Uberl%C3%A2ndia_Esporte_Clube.svg/800px-Uberl%C3%A2ndia_Esporte_Clube.svg.png"
+                                alt="Uberlândia">
+                        </a>
+                        <p>Uberlândia</p>
+                        <p>Minas Gerais</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(54, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/1a/FC_Cascavel_logo.png/200px-FC_Cascavel_logo.png"
+                                alt="FC Cascavel">
+                        </a>
+                        <p>FC Cascavel</p>
+                        <p>Paraná</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(55, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/7b/Cianorte_Futebol_Clube.png/200px-Cianorte_Futebol_Clube.png"
+                                alt="Cianorte">
+                        </a>
+                        <p>Cianorte</p>
+                        <p>Paraná</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(56, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/c/c2/Azuriz_Futebol_Clube.png"
+                                alt="Azuriz">
+                        </a>
+                        <p>Azuriz</p>
+                        <p>Paraná</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(57, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Escudo_do_Joinville_Esporte_Clube.svg"
+                                alt="Joinville">
+                        </a>
+                        <p>Joinville</p>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(58, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Barra_Futebol_Clube.svg/800px-Barra_Futebol_Clube.svg.png"
+                                alt="Barra-SC">
+                        </a>
+                        <p>Barra-SC</p>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(59, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Marcilio_Dias_2022.svg/800px-Marcilio_Dias_2022.svg.png"
+                                alt="Marcílio Dias">
+                        </a>
+                        <p>Marcílio Dias</p>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(60, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/S%C3%A3o_Jos%C3%A9_%28Rio_Grande_do_Sul%29.svg/800px-S%C3%A3o_Jos%C3%A9_%28Rio_Grande_do_Sul%29.svg.png"
+                                alt="São José-RS">
+                        </a>
+                        <p>São José-RS</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(61, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9d/S%C3%A3o_Luiz_de_Iju%C3%AD.png/200px-S%C3%A3o_Luiz_de_Iju%C3%AD.png"
+                                alt="São Luiz">
+                        </a>
+                        <p>São Luiz</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(62, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Guarany_de_Bag%C3%A9.svg/800px-Guarany_de_Bag%C3%A9.svg.png"
+                                alt="Guarany de Bagé">
+                        </a>
+                        <p>Guarany de Bagé</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
+                    <div class="time">
+                        <a href="#" onclick="zoomClubeD(63, event)">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Brasil_de_Pelotas.svg/800px-Brasil_de_Pelotas.svg.png"
+                                alt="Brasil de Pelotas">
+                        </a>
+                        <p>Brasil de Pelotas</p>
+                        <p>Rio Grande do Sul</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -372,6 +1095,7 @@
     </main>
 
     <script src="/scripts/brasileirão.js"></script>
+    <script src="/scripts/series.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

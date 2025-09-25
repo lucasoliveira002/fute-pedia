@@ -6,7 +6,7 @@
 <img src="images/exemplos/exemplo2.png">
 </p>
 
-link para acessar --> https://lucasoliveira002.github.io/fute-pedia/
+link para acessar --> https://fute-pedia.netlify.app/
 
 ---
 ### Ideia:
@@ -28,11 +28,11 @@ Pretendo fazer com que esse projeto se assemelhe a folhear um álbum de figurinh
 
 ---
 ### Futuros upgrades
-- Implementar todas as divisões nacionais faltantes (séries  C e D);
+- Implementar todas as divisões nacionais faltantes (série D***);
 - Implementar times das principais ligas europeias (Premier, LaLiga, Serie A, Ligue One, Liga Portugal etc);
 - Implementar todos os times paulistas, pelo menos os que estão na A1 e A2;
 - Criar uma página personalizada para cada clube. (Talvez)
-- Sistema de Login (cadastro)
+- Sistema de Login (cadastro) - Descontinuado
 - Usuário poder rankear clubes arrastando
 
 Por enquanto acho que isso é o principal
