@@ -175,3 +175,15 @@ function zoomClube(posicao, event) {
 
     new bootstrap.Modal('#zoomClubeModal').show();
 }
+
+
+function alterarTemaSite(){
+    let tema = document.querySelector("html").getAttribute("data-bs-theme");
+    if(tema ==="dark"){
+        document.querySelector("html").setAttribute("data-bs-theme", "light");
+        document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-moon-stars"></i>`;
+    }else{
+        document.querySelector("html").setAttribute("data-bs-theme", "dark");
+        document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-brightness-high-fill" ></i>`;
+    }
+}
