@@ -1,0 +1,142 @@
+[
+    {
+        "nome": "Amazonas",
+        "cidade": "Manaus-AM",
+        "img": "images/serieB/amazonas.png",
+        "descricao": "O Amazonas FC, fundado em 2019, é um clube recente, mas vem se destacando no futebol do Norte do Brasil.",
+        "url": "pages/serieB/amazonas.html"
+    },
+    {
+        "nome": "América-MG",
+        "cidade": "Belo Horizonte-MG",
+        "img": "images/serieB/americamg.png",
+        "descricao": "O América-MG, fundado em 1912, é tradicional em Minas Gerais, com história de grandes campanhas nacionais.",
+        "url": "pages/serieB/americamg.html"
+    },
+    {
+        "nome": "Athletic",
+        "cidade": "São João Nepomuceno-MG",
+        "img": "images/serieB/athletic.png",
+        "descricao": "O Athletic Club é um dos clubes mais antigos de Minas Gerais, fundado em 1912, com forte ligação comunitária.",
+        "url": "pages/serieB/athletic.html"
+    },
+    {
+        "nome": "Athletico-PR",
+        "cidade": "Curitiba-PR",
+        "img": "images/serieB/athletico-pr.png",
+        "descricao": "O Athletico Paranaense é um clube tradicional do Paraná, conhecido por seu estádio moderno e sua forte base de torcida.",
+        "url": "pages/serieB/athletico-pr.html"
+    },
+    {
+        "nome": "Atlético-GO",
+        "cidade": "Goiânia-GO",
+        "img": "images/serieB/atletico-go.png",
+        "descricao": "O Atlético Goianiense é um dos principais clubes de Goiás, com campanhas expressivas no futebol brasileiro.",
+        "url": "pages/serieB/atletico-go.html"
+    },
+    {
+        "nome": "Avaí",
+        "cidade": "Florianópolis-SC",
+        "img": "images/serieB/avai.png",
+        "descricao": "O Avaí FC é tradicional em Santa Catarina, conhecido como Leão da Ilha, com torcida apaixonada e história de títulos estaduais.",
+        "url": "pages/serieB/avai.html"
+    },
+    {
+        "nome": "Botafogo-SP",
+        "cidade": "Ribeirão Preto-SP",
+        "img": "images/serieB/botafogo-sp.png",
+        "descricao": "O Botafogo de Ribeirão Preto é um clube paulista com tradição, conhecido como Pantera e grande formador de talentos.",
+        "url": "pages/serieB/botafogo-sp.html"
+    },
+    {
+        "nome": "Chapecoense",
+        "cidade": "Chapecó-SC",
+        "img": "images/serieB/chapecoense.png",
+        "descricao": "A Chapecoense, fundada em 1973, ganhou reconhecimento internacional e possui grande torcida no Oeste catarinense.",
+        "url": "pages/serieB/chapecoense.html"
+    },
+    {
+        "nome": "Coritiba",
+        "cidade": "Curitiba-PR",
+        "img": "images/serieB/coritiba.png",
+        "descricao": "O Coritiba Foot Ball Club é um dos clubes mais tradicionais do Paraná, com grande torcida e títulos estaduais expressivos.",
+        "url": "pages/serieB/coritiba.html"
+    },
+    {
+        "nome": "CRB",
+        "cidade": "Maceió-AL",
+        "img": "images/serieB/crb.png",
+        "descricao": "O Clube de Regatas Brasil é tradicional em Alagoas, fundado em 1912, com participação frequente na Série B.",
+        "url": "pages/serieB/crb.html"
+    },
+    {
+        "nome": "Criciúma",
+        "cidade": "Criciúma-SC",
+        "img": "images/serieB/criciuma.png",
+        "descricao": "O Criciúma Esporte Clube é um clube catarinense com histórico de títulos nacionais e forte base de torcida local.",
+        "url": "pages/serieB/criciuma.html"
+    },
+    {
+        "nome": "Cuiabá",
+        "cidade": "Cuiabá-MT",
+        "img": "images/serieB/cuiaba.png",
+        "descricao": "O Cuiabá Esporte Clube é um clube do Mato Grosso que vem crescendo no cenário nacional e se consolidou na Série B.",
+        "url": "pages/serieB/cuiaba.html"
+    },
+    {
+        "nome": "Ferroviária",
+        "cidade": "Araraquara-SP",
+        "img": "images/serieB/ferroviaria.png",
+        "descricao": "A Associação Ferroviária de Esportes é tradicional em São Paulo, conhecida como Ferrinha, com história de conquistas estaduais.",
+        "url": "pages/serieB/ferroviaria.html"
+    },
+    {
+        "nome": "Goiás",
+        "cidade": "Goiânia-GO",
+        "img": "images/serieB/goias.png",
+        "descricao": "O Goiás Esporte Clube é um dos clubes mais importantes de Goiás, com títulos estaduais e participação frequente na Série B e Série A.",
+        "url": "pages/serieB/goias.html"
+    },
+    {
+        "nome": "Novorizontino",
+        "cidade": "Novo Horizonte-SP",
+        "img": "images/serieB/novorizontino.png",
+        "descricao": "O Grêmio Novorizontino é um clube paulista em ascensão, conhecido pelo bom trabalho na base e competições estaduais.",
+        "url": "pages/serieB/novorizontino.html"
+    },
+    {
+        "nome": "Operário-PR",
+        "cidade": "Ponta Grossa-PR",
+        "img": "images/serieB/operario.png",
+        "descricao": "O Operário Ferroviário é tradicional no Paraná, com história sólida e presença constante na Série B.",
+        "url": "pages/serieB/operario.html"
+    },
+    {
+        "nome": "Paysandu",
+        "cidade": "Belém-PA",
+        "img": "images/serieB/paysandu.png",
+        "descricao": "O Paysandu Sport Club é tradicional no Pará, com torcedores apaixonados e histórico de títulos regionais.",
+        "url": "pages/serieB/paysandu.html"
+    },
+    {
+        "nome": "Remo",
+        "cidade": "Belém-PA",
+        "img": "images/serieB/remo.png",
+        "descricao": "O Clube do Remo é rival histórico do Paysandu e um dos clubes mais tradicionais da região Norte do Brasil.",
+        "url": "pages/serieB/remo.html"
+    },
+    {
+        "nome": "Vila Nova",
+        "cidade": "Goiânia-GO",
+        "img": "images/serieB/vilanova.png",
+        "descricao": "O Vila Nova Futebol Clube é tradicional em Goiás, conhecido por sua história e torcida apaixonada.",
+        "url": "pages/serieB/vilanova.html"
+    },
+    {
+        "nome": "Volta Redonda",
+        "cidade": "Volta Redonda-RJ",
+        "img": "images/serieB/voltaredonda.png",
+        "descricao": "O Volta Redonda Futebol Clube é tradicional no Rio de Janeiro, com destaque regional e participação na Série B.",
+        "url": "pages/serieB/voltaredonda.html"
+    }
+]
