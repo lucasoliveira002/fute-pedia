@@ -17,7 +17,7 @@ Pretendo fazer com que esse projeto se assemelhe a folhear um álbum de figurinh
 
 ---
 
-### Funções
+### Funcionalidades
 - Ao clicar num dos clubes abre uma caixinha com informações sobre
 
 | | |
@@ -27,6 +27,11 @@ Pretendo fazer com que esse projeto se assemelhe a folhear um álbum de figurinh
 - Botão de navegação entre as 4 divisões com JavaScript
 <img src="images/exemplos/botoes.png" Width="500">
 
+- Modo claro e escuro.
+
+| | |
+|---|---|
+| <img src="images/exemplos/claro.png" width="700"> | <img src="images/exemplos/escuro.png" width="700"> |
 ---
 ### Futuros possíveis upgrades
 - Implementar times das principais ligas europeias (Premier, LaLiga, Serie A, Ligue One, Liga Portugal etc);
