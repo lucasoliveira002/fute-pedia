@@ -1,0 +1,750 @@
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="ABECAT Ouvidorense">
+    </a>
+    <p>ABECAT Ouvidorense</p>
+    <p>Goiás</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Água Santa">
+    </a>
+    <p>Água Santa</p>
+    <p>São Paulo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Águia de Marabá">
+    </a>
+    <p>Águia de Marabá</p>
+    <p>Pará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Altos">
+    </a>
+    <p>Altos</p>
+    <p>Piauí</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="América">
+    </a>
+    <p>América</p>
+    <p>Rio de Janeiro</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="América">
+    </a>
+    <p>América</p>
+    <p>Rio Grande do Norte</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Aparecidense">
+    </a>
+    <p>Aparecidense</p>
+    <p>Goiás</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Araguaína">
+    </a>
+    <p>Araguaína</p>
+    <p>Tocantins</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="ASA">
+    </a>
+    <p>ASA</p>
+    <p>Alagoas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Atlético de Alagoinhas">
+    </a>
+    <p>Atlético de Alagoinhas</p>
+    <p>Bahia</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Atlético">
+    </a>
+    <p>Atlético</p>
+    <p>Ceará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Azuriz">
+    </a>
+    <p>Azuriz</p>
+    <p>Paraná</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Betim">
+    </a>
+    <p>Betim</p>
+    <p>Minas Gerais</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Blumenau">
+    </a>
+    <p>Blumenau</p>
+    <p>Santa Catarina</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Brasil de Pelotas">
+    </a>
+    <p>Brasil de Pelotas</p>
+    <p>Rio Grande do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Brasiliense">
+    </a>
+    <p>Brasiliense</p>
+    <p>Distrito Federal</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Capital">
+    </a>
+    <p>Capital</p>
+    <p>Distrito Federal</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Ceilândia">
+    </a>
+    <p>Ceilândia</p>
+    <p>Distrito Federal</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Central">
+    </a>
+    <p>Central</p>
+    <p>Pernambuco</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Cianorte">
+    </a>
+    <p>Cianorte</p>
+    <p>Paraná</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="CRAC">
+    </a>
+    <p>CRAC</p>
+    <p>Goiás</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="CSA">
+    </a>
+    <p>CSA</p>
+    <p>Alagoas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="CSE">
+    </a>
+    <p>CSE</p>
+    <p>Alagoas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Decisão">
+    </a>
+    <p>Decisão</p>
+    <p>Pernambuco</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Democrata GV">
+    </a>
+    <p>Democrata GV</p>
+    <p>Minas Gerais</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="FC Cascavel">
+    </a>
+    <p>FC Cascavel</p>
+    <p>Paraná</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Ferroviário">
+    </a>
+    <p>Ferroviário</p>
+    <p>Ceará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Fluminense">
+    </a>
+    <p>Fluminense</p>
+    <p>Piauí</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Galvez">
+    </a>
+    <p>Galvez</p>
+    <p>Acre</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Gama">
+    </a>
+    <p>Gama</p>
+    <p>Distrito Federal</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="GAS">
+    </a>
+    <p>GAS</p>
+    <p>Roraima</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Goiatuba">
+    </a>
+    <p>Goiatuba</p>
+    <p>Goiás</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Guaporé">
+    </a>
+    <p>Guaporé</p>
+    <p>Rondônia</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Guarany de Bagé">
+    </a>
+    <p>Guarany de Bagé</p>
+    <p>Rio Grande do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Humaitá">
+    </a>
+    <p>Humaitá</p>
+    <p>Acre</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="IAPE">
+    </a>
+    <p>IAPE</p>
+    <p>Maranhão</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Iguatu">
+    </a>
+    <p>Iguatu</p>
+    <p>Ceará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Imperatriz">
+    </a>
+    <p>Imperatriz</p>
+    <p>Maranhão</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Independência">
+    </a>
+    <p>Independência</p>
+    <p>Acre</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Inhumas">
+    </a>
+    <p>Inhumas</p>
+    <p>Goiás</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Jacuipense">
+    </a>
+    <p>Jacuipense</p>
+    <p>Bahia</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Joinville">
+    </a>
+    <p>Joinville</p>
+    <p>Santa Catarina</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Juazeirense">
+    </a>
+    <p>Juazeirense</p>
+    <p>Bahia</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Lagarto">
+    </a>
+    <p>Lagarto</p>
+    <p>Sergipe</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Laguna">
+    </a>
+    <p>Laguna</p>
+    <p>Rio Grande do Norte</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Luverdense">
+    </a>
+    <p>Luverdense</p>
+    <p>Mato Grosso</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Madureira">
+    </a>
+    <p>Madureira</p>
+    <p>Rio de Janeiro</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Maguary">
+    </a>
+    <p>Maguary</p>
+    <p>Pernambuco</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Manaus">
+    </a>
+    <p>Manaus</p>
+    <p>Amazonas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Manauara">
+    </a>
+    <p>Manauara</p>
+    <p>Amazonas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Marcílio Dias">
+    </a>
+    <p>Marcílio Dias</p>
+    <p>Santa Catarina</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Maracanã">
+    </a>
+    <p>Maracanã</p>
+    <p>Ceará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Maricá">
+    </a>
+    <p>Maricá</p>
+    <p>Rio de Janeiro</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Mixto">
+    </a>
+    <p>Mixto</p>
+    <p>Mato Grosso</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Monte Roraima">
+    </a>
+    <p>Monte Roraima</p>
+    <p>Roraima</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Moto Club">
+    </a>
+    <p>Moto Club</p>
+    <p>Maranhão</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Nacional">
+    </a>
+    <p>Nacional</p>
+    <p>Amazonas</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Noroeste">
+    </a>
+    <p>Noroeste</p>
+    <p>São Paulo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Nova Iguaçu">
+    </a>
+    <p>Nova Iguaçu</p>
+    <p>Rio de Janeiro</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Operário">
+    </a>
+    <p>Operário</p>
+    <p>Mato Grosso do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Operário Várzea‑Grande">
+    </a>
+    <p>Operário Várzea‑Grande</p>
+    <p>Mato Grosso</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Oratório">
+    </a>
+    <p>Oratório</p>
+    <p>Amapá</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Pantanal">
+    </a>
+    <p>Pantanal</p>
+    <p>Mato Grosso do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Parnahyba">
+    </a>
+    <p>Parnahyba</p>
+    <p>Piauí</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Piauí">
+    </a>
+    <p>Piauí</p>
+    <p>Piauí</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Porto">
+    </a>
+    <p>Porto</p>
+    <p>Bahia</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Porto Velho">
+    </a>
+    <p>Porto Velho</p>
+    <p>Rondônia</p>
+</div
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Portuguesa">
+    </a>
+    <p>Portuguesa</p>
+    <p>São Paulo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Portuguesa">
+    </a>
+    <p>Portuguesa</p>
+    <p>Rio de Janeiro</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Pouso Alegre">
+    </a>
+    <p>Pouso Alegre</p>
+    <p>Minas Gerais</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Primavera">
+    </a>
+    <p>Primavera</p>
+    <p>Mato Grosso</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Real Noroeste">
+    </a>
+    <p>Real Noroeste</p>
+    <p>Espírito Santo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Retrô">
+    </a>
+    <p>Retrô</p>
+    <p>Pernambuco</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Rio Branco">
+    </a>
+    <p>Rio Branco</p>
+    <p>Espírito Santo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Sampaio Corrêa">
+    </a>
+    <p>Sampaio Corrêa</p>
+    <p>Maranhão</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Santa Catarina">
+    </a>
+    <p>Santa Catarina</p>
+    <p>Santa Catarina</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="São José">
+    </a>
+    <p>São José</p>
+    <p>Rio Grande do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="São Joseense">
+    </a>
+    <p>São Joseense</p>
+    <p>Paraná</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="São Luiz">
+    </a>
+    <p>São Luiz</p>
+    <p>Rio Grande do Sul</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="São Raimundo">
+    </a>
+    <p>São Raimundo</p>
+    <p>Roraima</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Serra Branca">
+    </a>
+    <p>Serra Branca</p>
+    <p>Paraíba</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Sergipe">
+    </a>
+    <p>Sergipe</p>
+    <p>Sergipe</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Sousa">
+    </a>
+    <p>Sousa</p>
+    <p>Paraíba</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Tirol">
+    </a>
+    <p>Tirol</p>
+    <p>Ceará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Tocantinópolis">
+    </a>
+    <p>Tocantinópolis</p>
+    <p>Tocantins</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Tombense">
+    </a>
+    <p>Tombense</p>
+    <p>Minas Gerais</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Treze">
+    </a>
+    <p>Treze</p>
+    <p>Paraíba</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Trem">
+    </a>
+    <p>Trem</p>
+    <p>Amapá</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Tuna Luso">
+    </a>
+    <p>Tuna Luso</p>
+    <p>Pará</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Uberlândia">
+    </a>
+    <p>Uberlândia</p>
+    <p>Minas Gerais</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="União Rondonópolis">
+    </a>
+    <p>União Rondonópolis</p>
+    <p>Mato Grosso</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Velo Clube">
+    </a>
+    <p>Velo Clube</p>
+    <p>São Paulo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="Vitória">
+    </a>
+    <p>Vitória</p>
+    <p>Espírito Santo</p>
+</div>
+
+<div class="time">
+    <a href="#" onclick="zoomClubeD(0, event)">
+        <img src="" alt="XV de Piracicaba">
+    </a>
+    <p>XV de Piracicaba</p>
+    <p>São Paulo</p>
+</div>

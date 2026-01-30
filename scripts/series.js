@@ -317,463 +317,183 @@ function zoomClubeC(posicao, event) {
 
 
 //Serie D
+// Mapeamento das siglas para o nome completo dos estados
+const estados = {
+  AC: "Acre",
+  AL: "Alagoas",
+  AP: "Amapá",
+  AM: "Amazonas",
+  BA: "Bahia",
+  CE: "Ceará",
+  DF: "Distrito Federal",
+  ES: "Espírito Santo",
+  GO: "Goiás",
+  MA: "Maranhão",
+  MT: "Mato Grosso",
+  MS: "Mato Grosso do Sul",
+  MG: "Minas Gerais",
+  PA: "Pará",
+  PB: "Paraíba",
+  PR: "Paraná",
+  PE: "Pernambuco",
+  PI: "Piauí",
+  RJ: "Rio de Janeiro",
+  RN: "Rio Grande do Norte",
+  RS: "Rio Grande do Sul",
+  RO: "Rondônia",
+  RR: "Roraima",
+  SC: "Santa Catarina",
+  SP: "São Paulo",
+  SE: "Sergipe",
+  TO: "Tocantins"
+};
+
 let clubesD = [
-  // Grupo 1
-  {
-    nome: "Independência",
-    cidade: "Acre",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Independ%C3%AAncia_Futebol_Clube.svg/800px-Independ%C3%AAncia_Futebol_Clube.svg.png",
-    descricao: "Time do estado do Acre.",
-    url: "pages/serieD/independencia.html"
-  },
-  {
-    nome: "Humaitá",
-    cidade: "Acre",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Humait%C3%A1_FC_2023.svg/800px-Humait%C3%A1_FC_2023.svg.png",
-    descricao: "Time do estado do Acre.",
-    url: "pages/serieD/humaita.html"
-  },
-  {
-    nome: "Manaus",
-    cidade: "Amazonas",
-    img: "https://upload.wikimedia.org/wikipedia/pt/a/a4/Manaus_Futebol_Clube.png",
-    descricao: "Time do estado do Amazonas.",
-    url: "pages/serieD/manaus.html"
-  },
-  {
-    nome: "Manauara",
-    cidade: "Amazonas",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Manauara_Esporte_Clube.svg/800px-Manauara_Esporte_Clube.svg.png",
-    descricao: "Time do estado do Amazonas.",
-    url: "pages/serieD/manauara.html"
-  },
-  {
-    nome: "Tuna Luso",
-    cidade: "Pará",
-    img: "https://upload.wikimedia.org/wikipedia/pt/d/d3/Tuna_Luso.png",
-    descricao: "Time do estado do Pará.",
-    url: "pages/serieD/tunaluso.html"
-  },
-  {
-    nome: "Águia de Marabá",
-    cidade: "Pará",
-    img: "https://upload.wikimedia.org/wikipedia/pt/1/18/%C3%81guia_de_Marab%C3%A1.png",
-    descricao: "Time do estado do Pará.",
-    url: "pages/serieD/aguiademaraba.html"
-  },
-  {
-    nome: "GAS",
-    cidade: "Roraima",
-    img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Gr%C3%AAmio_Atl%C3%A9tico_Sampaio_logo.png",
-    descricao: "Time do estado de Roraima.",
-    url: "pages/serieD/gas.html"
-  },
-  {
-    nome: "Trem",
-    cidade: "Amapá",
-    img: "https://upload.wikimedia.org/wikipedia/pt/1/11/Trem_Desportivo_Clube.png",
-    descricao: "Time do estado do Amapá.",
-    url: "pages/serieD/trem.html"
-  },
-  // Grupo 2
-  {
-    nome: "Maracanã",
-    cidade: "Ceará",
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Maracan%C3%A3_Esporte_Clube.svg",
-    descricao: "Time do estado do Ceará.",
-    url: "pages/serieD/maracana.html"
-  },
-  {
-    nome: "Iguatu",
-    cidade: "Ceará",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d9/Iguatu.png/200px-Iguatu.png",
-    descricao: "Time do estado do Ceará.",
-    url: "pages/serieD/iguatu.html"
-  },
-  {
-    nome: "Sampaio Corrêa",
-    cidade: "Maranhão",
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sampaio_Corr%C3%AAa_Futebol_Clube_%28E%29.png",
-    descricao: "Time do estado do Maranhão.",
-    url: "pages/serieD/sampaiocorrea.html"
-  },
-  {
-    nome: "Maranhão",
-    cidade: "Maranhão",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Escudo_do_Maranh%C3%A3o_Atl%C3%A9tico_Clube.svg/800px-Escudo_do_Maranh%C3%A3o_Atl%C3%A9tico_Clube.svg.png",
-    descricao: "Time do estado do Maranhão.",
-    url: "pages/serieD/maranhao.html"
-  },
-  {
-    nome: "Altos",
-    cidade: "Piauí",
-    img: "https://upload.wikimedia.org/wikipedia/pt/b/b5/Associa%C3%A7%C3%A3o_Atl%C3%A9tica_de_Altos.png",
-    descricao: "Time do estado do Piauí.",
-    url: "pages/serieD/altos.html"
-  },
-  {
-    nome: "Parnahyba",
-    cidade: "Piauí",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/44/Parnahyba.png/200px-Parnahyba.png",
-    descricao: "Time do estado do Piauí.",
-    url: "pages/serieD/parnahyba.html"
-  },
-  {
-    nome: "Tocantinópolis",
-    cidade: "Tocantins",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a2/Tocantin%C3%B3polis.png/200px-Tocantin%C3%B3polis.png",
-    descricao: "Time do estado do Tocantins.",
-    url: "pages/serieD/tocantinopolis.html"
-  },
-  {
-    nome: "Imperatriz",
-    cidade: "Maranhão",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e5/Sociedade_Imperatriz_de_Desportos.png/200px-Sociedade_Imperatriz_de_Desportos.png",
-    descricao: "Time do estado do Maranhão.",
-    url: "pages/serieD/imperatriz.html"
-  },
-  // Grupo 3
-  {
-    nome: "Ferroviário",
-    cidade: "Ceará",
-    img: "https://upload.wikimedia.org/wikipedia/pt/c/c8/Escudo_do_Ferrovi%C3%A1rio_Atl%C3%A9tico_Clube_2018.png",
-    descricao: "Time do estado do Ceará.",
-    url: "pages/serieD/ferroviario.html"
-  },
-  {
-    nome: "Horizonte",
-    cidade: "Ceará",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Horizonte.png/200px-Horizonte.png",
-    descricao: "Time do estado do Ceará.",
-    url: "pages/serieD/horizonte.html"
-  },
-  {
-    nome: "Sousa",
-    cidade: "Paraíba",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sousa_Esporte_Clube.svg/800px-Sousa_Esporte_Clube.svg.png",
-    descricao: "Time do estado da Paraíba.",
-    url: "pages/serieD/sousa.html"
-  },
-  {
-    nome: "Treze",
-    cidade: "Paraíba",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Treze.svg/800px-Treze.svg.png",
-    descricao: "Time do estado da Paraíba.",
-    url: "pages/serieD/treze.html"
-  },
-  {
-    nome: "Santa Cruz",
-    cidade: "Pernambuco",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Santa_Cruz_Futebol_Clube_PE.svg/1865px-Santa_Cruz_Futebol_Clube_PE.svg.png",
-    descricao: "Time do estado de Pernambuco.",
-    url: "pages/serieD/santacruz.html"
-  },
-  {
-    nome: "Central",
-    cidade: "Pernambuco",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Central_Sport_Club.svg/800px-Central_Sport_Club.svg.png",
-    descricao: "Time do estado de Pernambuco.",
-    url: "pages/serieD/central.html"
-  },
-  {
-    nome: "América-RN",
-    cidade: "Rio Grande do Norte",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Am%C3%A9rica-RN_2023.svg/1050px-Am%C3%A9rica-RN_2023.svg.png",
-    descricao: "Time do estado do Rio Grande do Norte.",
-    url: "pages/serieD/america-rn.html"
-  },
-  {
-    nome: "Santa Cruz-RN",
-    cidade: "Rio Grande do Norte",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/9/91/Santa_Cruz-RN.png/200px-Santa_Cruz-RN.png",
-    descricao: "Time do estado do Rio Grande do Norte.",
-    url: "pages/serieD/santacruzrn.html"
-  },
-  // Grupo 4
-  {
-    nome: "ASA",
-    cidade: "Alagoas",
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Agremiação_Sportiva_Arapiraquense_logo.png",
-    descricao: "Time do estado de Alagoas.",
-    url: "pages/serieD/asa.html"
-  },
-  {
-    nome: "Penedense",
-    cidade: "Alagoas",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Penedense_Alagoas.svg/800px-Penedense_Alagoas.svg.png",
-    descricao: "Time do estado de Alagoas.",
-    url: "pages/serieD/penedense.html"
-  },
-  {
-    nome: "Sergipe",
-    cidade: "Sergipe",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Club_Sportivo_Sergipe.svg/800px-Club_Sportivo_Sergipe.svg.png",
-    descricao: "Time do estado de Sergipe.",
-    url: "pages/serieD/sergipe.html"
-  },
-  {
-    nome: "Lagarto",
-    cidade: "Sergipe",
-    img: "https://upload.wikimedia.org/wikipedia/pt/b/b3/Lagarto_Futebol_Clube.png",
-    descricao: "Time do estado de Sergipe.",
-    url: "pages/serieD/lagarto.html"
-  },
-  {
-    nome: "Barcelona de Ilhéus",
-    cidade: "Bahia",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/c/c3/Barcelona_de_Ilh%C3%A9us.png/200px-Barcelona_de_Ilh%C3%A9us.png",
-    descricao: "Time do estado da Bahia.",
-    url: "pages/serieD/barcelonadeilheus.html"
-  },
-  {
-    nome: "Jequié",
-    cidade: "Bahia",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Associa%C3%A7%C3%A3o_Desportiva_Jequi%C3%A9.svg/800px-Associa%C3%A7%C3%A3o_Desportiva_Jequi%C3%A9.svg.png",
-    descricao: "Time do estado da Bahia.",
-    url: "pages/serieD/jequie.html"
-  },
-  {
-    nome: "Juazeirense",
-    cidade: "Bahia",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d4/Juazeirense.png/200px-Juazeirense.png",
-    descricao: "Time do estado da Bahia.",
-    url: "pages/serieD/juazeirense.html"
-  },
-  {
-    nome: "União-TO",
-    cidade: "Tocantins",
-    img: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Uniao_Atl%C3%A9tica_Clube_S%C3%A3o_Jos%C3%A9_da_Praia.png",
-    descricao: "Time do estado do Tocantins.",
-    url: "pages/serieD/uniaoto.html"
-  },
-  // Grupo 5
-  {
-    nome: "Ceilândia",
-    cidade: "Distrito Federal",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/3/36/Ceil%C3%A2ndia_Esporte_Clube.png/200px-Ceil%C3%A2ndia_Esporte_Clube.png",
-    descricao: "Time do Distrito Federal.",
-    url: "pages/serieD/ceilandia.html"
-  },
-  {
-    nome: "Capital-DF",
-    cidade: "Distrito Federal",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/8/8c/Capital_FC.png/200px-Capital_FC.png",
-    descricao: "Time do Distrito Federal.",
-    url: "pages/serieD/capitaldf.html"
-  },
-  {
-    nome: "Aparecidense",
-    cidade: "Goiás",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e6/Aparecidense.png/200px-Aparecidense.png",
-    descricao: "Time do estado de Goiás.",
-    url: "pages/serieD/aparecidense.html"
-  },
-  {
-    nome: "Goiânia",
-    cidade: "Goiás",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Goi%C3%A2nia_Esporte_Clube.svg/800px-Goi%C3%A2nia_Esporte_Clube.svg.png",
-    descricao: "Time do estado de Goiás.",
-    url: "pages/serieD/goiania.html"
-  },
-  {
-    nome: "Mixto-MT",
-    cidade: "Mato Grosso",
-    img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mixto_Esporte_Clube_logo.png",
-    descricao: "Time do estado do Mato Grosso.",
-    url: "pages/serieD/mixtomt.html"
-  },
-  {
-    nome: "Luverdense",
-    cidade: "Mato Grosso",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Luverdense_Esporte_Clube_logo.svg/800px-Luverdense_Esporte_Clube_logo.svg.png",
-    descricao: "Time do estado do Mato Grosso.",
-    url: "pages/serieD/luverdense.html"
-  },
-  {
-    nome: "Porto Velho",
-    cidade: "Rondônia",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/17/Porto_Velho_Esporte_Clube.png/200px-Porto_Velho_Esporte_Clube.png",
-    descricao: "Time do estado de Rondônia.",
-    url: "pages/serieD/portovelho.html"
-  },
-  {
-    nome: "Goianésia",
-    cidade: "Goiás",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/0/00/Goian%C3%A9sia_Esporte_Clube.png/200px-Goian%C3%A9sia_Esporte_Clube.png",
-    descricao: "Time do estado de Goiás.",
-    url: "pages/serieD/goianesia.html"
-  },
-  // Grupo 6
-  {
-    nome: "Rio Branco-ES",
-    cidade: "Espírito Santo",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rio_Branco_Esporte_Clube.svg/800px-Rio_Branco_Esporte_Clube.svg.png",
-    descricao: "Time do estado do Espírito Santo.",
-    url: "pages/serieD/riobrancoes.html"
-  },
-  {
-    nome: "Porto Vitória",
-    cidade: "Espírito Santo",
-    img: "https://upload.wikimedia.org/wikipedia/pt/d/d7/Porto_Vit%C3%B3ria_Futebol_Clube.png",
-    descricao: "Time do estado do Espírito Santo.",
-    url: "pages/serieD/portovitoria.html"
-  },
-  {
-    nome: "Nova Iguaçu",
-    cidade: "Rio de Janeiro",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/3/36/Nova_Igua%C3%A7u_Futebol_Clube.svg/800px-Nova_Igua%C3%A7u_Futebol_Clube.svg.png",
-    descricao: "Time do estado do Rio de Janeiro.",
-    url: "pages/serieD/novaiguacu.html"
-  },
-  {
-    nome: "Boavista",
-    cidade: "Rio de Janeiro",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/f/f6/Boavista_Sport_Club_2023.png/200px-Boavista_Sport_Club_2023.png",
-    descricao: "Time do estado do Rio de Janeiro.",
-    url: "pages/serieD/boavista.html"
-  },
-  {
-    nome: "Pouso Alegre",
-    cidade: "Minas Gerais",
-    img: "https://upload.wikimedia.org/wikipedia/pt/3/30/Pouso_Alegre_Futebol_Clube.png",
-    descricao: "Time do estado de Minas Gerais.",
-    url: "pages/serieD/pousoalegre.html"
-  },
-  {
-    nome: "Maricá",
-    cidade: "Rio de Janeiro",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Maric%C3%A1_Futebol_Clube.svg/800px-Maric%C3%A1_Futebol_Clube.svg.png",
-    descricao: "Time do estado do Rio de Janeiro.",
-    url: "pages/serieD/marica.html"
-  },
-  {
-    nome: "Portuguesa",
-    cidade: "São Paulo",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Portuguesa_de_Desportos_logo.svg/800px-Portuguesa_de_Desportos_logo.svg.png",
-    descricao: "Time do estado de São Paulo.",
-    url: "pages/serieD/portuguesa.html"
-  },
-  {
-    nome: "Água Santa",
-    cidade: "São Paulo",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/1d/%C3%81gua_Santa_2023.png/200px-%C3%81gua_Santa_2023.png",
-    descricao: "Time do estado de São Paulo.",
-    url: "pages/serieD/aguasanta.html"
-  },
-  // Grupo 7
-  {
-    nome: "Goiatuba",
-    cidade: "Goiás",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/2/23/Goiatuba_Esporte_Clube.png/200px-Goiatuba_Esporte_Clube.png",
-    descricao: "Time do estado de Goiás.",
-    url: "pages/serieD/goiatuba.html"
-  },
-  {
-    nome: "Itabirito",
-    cidade: "Minas Gerais",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d9/Itabirito_FC.png/200px-Itabirito_FC.png",
-    descricao: "Time do estado de Minas Gerais.",
-    url: "pages/serieD/itabirito.html"
-  },
-  {
-    nome: "Inter de Limeira",
-    cidade: "São Paulo",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/4/4b/AA_Inter_de_Limeira_logo.png/200px-AA_Inter_de_Limeira_logo.png",
-    descricao: "Time do estado de São Paulo.",
-    url: "pages/serieD/interdelimeira.html"
-  },
-  {
-    nome: "Monte Azul",
-    cidade: "São Paulo",
-    img: "https://upload.wikimedia.org/wikipedia/pt/f/fa/Atl%C3%A9tico_Monte_Azul.png",
-    descricao: "Time do estado de São Paulo.",
-    url: "pages/serieD/monteazul.html"
-  },
-  {
-    nome: "Operário-MS",
-    cidade: "Mato Grosso do Sul",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Oper%C3%A1rio_Futebol_Clube_MS.svg/800px-Oper%C3%A1rio_Futebol_Clube_MS.svg.png",
-    descricao: "Time do estado do Mato Grosso do Sul.",
-    url: "pages/serieD/operarioms.html"
-  },
-  {
-    nome: "Uberlândia",
-    cidade: "Minas Gerais",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Uberl%C3%A2ndia_Esporte_Clube.svg/800px-Uberl%C3%A2ndia_Esporte_Clube.svg.png",
-    descricao: "Time do estado de Minas Gerais.",
-    url: "pages/serieD/uberlandia.html"
-  },
-  {
-    nome: "FC Cascavel",
-    cidade: "Paraná",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/1a/FC_Cascavel_logo.png/200px-FC_Cascavel_logo.png",
-    descricao: "Time do estado do Paraná.",
-    url: "pages/serieD/fccascavel.html"
-  },
-  {
-    nome: "Cianorte",
-    cidade: "Paraná",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/7/7b/Cianorte_Futebol_Clube.png/200px-Cianorte_Futebol_Clube.png",
-    descricao: "Time do estado do Paraná.",
-    url: "pages/serieD/cianorte.html"
-  },
-  // Grupo 8
-  {
-    nome: "Azuriz",
-    cidade: "Paraná",
-    img: "https://upload.wikimedia.org/wikipedia/pt/c/c2/Azuriz_Futebol_Clube.png",
-    descricao: "Time do estado do Paraná.",
-    url: "pages/serieD/azuriz.html"
-  },
-  {
-    nome: "Joinville",
-    cidade: "Santa Catarina",
-    img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Escudo_do_Joinville_Esporte_Clube.svg",
-    descricao: "Time do estado de Santa Catarina.",
-    url: "pages/serieD/joinville.html"
-  },
-  {
-    nome: "Barra-SC",
-    cidade: "Santa Catarina",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Barra_Futebol_Clube.svg/800px-Barra_Futebol_Clube.svg.png",
-    descricao: "Time do estado de Santa Catarina.",
-    url: "pages/serieD/barrasc.html"
-  },
-  {
-    nome: "Marcílio Dias",
-    cidade: "Santa Catarina",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Marcilio_Dias_2022.svg/800px-Marcilio_Dias_2022.svg.png",
-    descricao: "Time do estado de Santa Catarina.",
-    url: "pages/serieD/marciliodias.html"
-  },
-  {
-    nome: "São José-RS",
-    cidade: "Rio Grande do Sul",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/S%C3%A3o_Jos%C3%A9_%28Rio_Grande_do_Sul%29.svg/800px-S%C3%A3o_Jos%C3%A9_%28Rio_Grande_do_Sul%29.svg.png",
-    descricao: "Time do estado do Rio Grande do Sul.",
-    url: "pages/serieD/saojosers.html"
-  },
-  {
-    nome: "São Luiz",
-    cidade: "Rio Grande do Sul",
-    img: "https://upload.wikimedia.org/wikipedia/pt/thumb/9/9d/S%C3%A3o_Luiz_de_Iju%C3%AD.png/200px-S%C3%A3o_Luiz_de_Iju%C3%AD.png",
-    descricao: "Time do estado do Rio Grande do Sul.",
-    url: "pages/serieD/saoluiz.html"
-  },
-  {
-    nome: "Guarany de Bagé",
-    cidade: "Rio Grande do Sul",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Guarany_de_Bag%C3%A9.svg/800px-Guarany_de_Bag%C3%A9.svg.png",
-    descricao: "Time do estado do Rio Grande do Sul.",
-    url: "pages/serieD/guaranydebage.html"
-  },
-  {
-    nome: "Brasil de Pelotas",
-    cidade: "Rio Grande do Sul",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Brasil_de_Pelotas.svg/800px-Brasil_de_Pelotas.svg.png",
-    descricao: "Time do estado do Rio Grande do Sul.",
-    url: "pages/serieD/brasildepelotas.html"
-  }
+
+  // Grupo 1 – Acre
+  { nome: "Independência",          cidade: estados.AC, img: "", descricao: "", url: "" },
+  { nome: "Galvez",                 cidade: estados.AC, img: "", descricao: "", url: "" },
+  { nome: "Humaitá",                cidade: estados.AC, img: "", descricao: "", url: "" },
+
+  // Grupo 2 – Alagoas
+  { nome: "ASA",                    cidade: estados.AL, img: "", descricao: "", url: "" },
+  { nome: "CSA",                    cidade: estados.AL, img: "", descricao: "", url: "" },
+  { nome: "CSE",                    cidade: estados.AL, img: "", descricao: "", url: "" },
+
+  // Grupo 3 – Amapá
+  { nome: "Oratório",               cidade: estados.AP, img: "", descricao: "", url: "" },
+  { nome: "Trem",                   cidade: estados.AP, img: "", descricao: "", url: "" },
+
+  // Grupo 4 – Amazonas
+  { nome: "Manaus",                 cidade: estados.AM, img: "", descricao: "", url: "" },
+  { nome: "Manauara",               cidade: estados.AM, img: "", descricao: "", url: "" },
+  { nome: "Nacional",               city: estados.AM, img: "", descricao: "", url: "" },
+
+  // Grupo 5 – Bahia
+  { nome: "Atlético de Alagoinhas", cidade: estados.BA, img: "", descricao: "", url: "" },
+  { nome: "Jacuipense",             cidade: estados.BA, img: "", descricao: "", url: "" },
+  { nome: "Porto",                  cidade: estados.BA, img: "", descricao: "", url: "" },
+
+  // Grupo 6 – Ceará
+  { nome: "Atlético-CE",            cidade: estados.CE, img: "", descricao: "", url: "" },
+  { nome: "Ferroviário",            cidade: estados.CE, img: "", descricao: "", url: "" },
+  { nome: "Iguatu",                 cidade: estados.CE, img: "", descricao: "", url: "" },
+  { nome: "Maracanã",               cidade: estados.CE, img: "", descricao: "", url: "" },
+  { nome: "Tirol",                  cidade: estados.CE, img: "", descricao: "", url: "" },
+
+  // Grupo 7 – Distrito Federal
+  { nome: "Brasiliense",            cidade: estados.DF, img: "", descricao: "", url: "" },
+  { nome: "Capital",                cidade: estados.DF, img: "", descricao: "", url: "" },
+  { nome: "Ceilândia",              cidade: estados.DF, img: "", descricao: "", url: "" },
+  { nome: "Gama",                   cidade: estados.DF, img: "", descricao: "", url: "" },
+
+  // Grupo 8 – Espírito Santo
+  { nome: "Real Noroeste",          cidade: estados.ES, img: "", descricao: "", url: "" },
+  { nome: "Rio Branco",             cidade: estados.ES, img: "", descricao: "", url: "" },
+  { nome: "Vitória",                cidade: estados.ES, img: "", descricao: "", url: "" },
+
+  // Grupo 9 – Goiás
+  { nome: "ABECAT Ouvidorense",     cidade: estados.GO, img: "", descricao: "", url: "" },
+  { nome: "CRAC",                   cidade: estados.GO, img: "", descricao: "", url: "" },
+  { nome: "Goiatuba",               cidade: estados.GO, img: "", descricao: "", url: "" },
+  { nome: "Inhumas",                cidade: estados.GO, img: "", descricao: "", url: "" },
+
+  // Grupo 10 – Maranhão
+  { nome: "IAPE",                   cidade: estados.MA, img: "", descricao: "", url: "" },
+  { nome: "Imperatriz",             cidade: estados.MA, img: "", descricao: "", url: "" },
+  { nome: "Moto Club",              cidade: estados.MA, img: "", descricao: "", url: "" },
+  { nome: "Sampaio Corrêa",         cidade: estados.MA, img: "", descricao: "", url: "" },
+
+  // Grupo 11 – Mato Grosso
+  { nome: "Luverdense",             cidade: estados.MT, img: "", descricao: "", url: "" },
+  { nome: "Mixto",                  cidade: estados.MT, img: "", descricao: "", url: "" },
+  { nome: "Operário Várzea‑Grande",cidade: estados.MT, img: "", descricao: "", url: "" },
+  { nome: "Primavera",              cidade: estados.MT, img: "", descricao: "", url: "" },
+  { nome: "União Rondonópolis",     cidade: estados.MT, img: "", descricao: "", url: "" },
+
+  // Grupo 12 – Mato Grosso do Sul
+  { nome: "Operário",               cidade: estados.MS, img: "", descricao: "", url: "" },
+  { nome: "Pantanal",               cidade: estados.MS, img: "", descricao: "", url: "" },
+
+  // Grupo 13 – Minas Gerais
+  { nome: "Betim",                  cidade: estados.MG, img: "", descricao: "", url: "" },
+  { nome: "Democrata GV",           cidade: estados.MG, img: "", descricao: "", url: "" },
+  { nome: "Madureira",              cidade: estados.MG, img: "", descricao: "", url: "" },
+  { nome: "Pouso Alegre",           city: estados.MG, img: "", descricao: "", url: "" },
+  { nome: "Tombense",               cidade: estados.MG, img: "", descricao: "", url: "" },
+  { nome: "Uberlândia",             cidade: estados.MG, img: "", descricao: "", url: "" },
+
+  // Grupo 14 – Pará
+  { nome: "Águia de Marabá",        cidade: estados.PA, img: "", descricao: "", url: "" },
+  { nome: "Tuna Luso",              cidade: estados.PA, img: "", descricao: "", url: "" },
+
+  // Grupo 15 – Paraíba
+  { nome: "Serra Branca",           cidade: estados.PB, img: "", descricao: "", url: "" },
+  { nome: "Sousa",                  cidade: estados.PB, img: "", descricao: "", url: "" },
+  { nome: "Treze",                  cidade: estados.PB, img: "", descricao: "", url: "" },
+
+  // Grupo 16 – Paraná
+  { nome: "Azuriz",                 cidade: estados.PR, img: "", descricao: "", url: "" },
+  { nome: "Cianorte",               cidade: estados.PR, img: "", descricao: "", url: "" },
+  { nome: "FC Cascavel",            cidade: estados.PR, img: "", descricao: "", url: "" },
+  { nome: "São Joseense",           cidade: estados.PR, img: "", descricao: "", url: "" },
+
+  // Grupo 17 – Pernambuco
+  { nome: "Central",                cidade: estados.PE, img: "", descricao: "", url: "" },
+  { nome: "Decisão",                cidade: estados.PE, img: "", descricao: "", url: "" },
+  { nome: "Maguary",                cidade: estados.PE, img: "", descricao: "", url: "" },
+  { nome: "Retrô",                  cidade: estados.PE, img: "", descricao: "", url: "" },
+
+  // Grupo 18 – Piauí
+  { nome: "Fluminense",             cidade: estados.PI, img: "", descricao: "", url: "" },
+  { nome: "Parnahyba",              cidade: estados.PI, img: "", descricao: "", url: "" },
+  { nome: "Piauí",                  cidade: estados.PI, img: "", descricao: "", url: "" },
+
+  // Grupo 19 – Rio de Janeiro
+  { nome: "América",                cidade: estados.RJ, img: "", descricao: "", url: "" },
+  { nome: "Madureira",              cidade: estados.RJ, img: "", descricao: "", url: "" },
+  { nome: "Maricá",                 cidade: estados.RJ, img: "", descricao: "", url: "" },
+  { nome: "Nova Iguaçu",            cidade: estados.RJ, img: "", descricao: "", url: "" },
+  { nome: "Portuguesa",             cidade: estados.RJ, img: "", descricao: "", url: "" },
+
+  // Grupo 20 – Rio Grande do Norte
+  { nome: "ABC",                    cidade: estados.RN, img: "", descricao: "", url: "" },
+  { nome: "América",                cidade: estados.RN, img: "", descricao: "", url: "" },
+  { nome: "Laguna",                 cidade: estados.RN, img: "", descricao: "", url: "" },
+
+  // Grupo 21 – Rio Grande do Sul
+  { nome: "Brasil de Pelotas",      cidade: estados.RS, img: "", descricao: "", url: "" },
+  { nome: "Guarany de Bagé",        cidade: estados.RS, img: "", descricao: "", url: "" },
+  { nome: "São José",               cidade: estados.RS, img: "", descricao: "", url: "" },
+  { nome: "São Luiz",               cidade: estados.RS, img: "", descricao: "", url: "" },
+
+  // Grupo 22 – Rondônia
+  { nome: "Guaporé",                cidade: estados.RO, img: "", descricao: "", url: "" },
+  { nome: "Porto Velho",            cidade: estados.RO, img: "", descricao: "", url: "" },
+
+  // Grupo 23 – Roraima
+  { nome: "GAS",                    cidade: estados.RR, img: "", descricao: "", url: "" },
+  { nome: "Monte Roraima",          cidade: estados.RR, img: "", descricao: "", url: "" },
+  { nome: "São Raimundo",           cidade: estados.RR, img: "", descricao: "", url: "" },
+
+  // Grupo 24 – Santa Catarina
+  { nome: "Blumenau",               cidade: estados.SC, img: "", descricao: "", url: "" },
+  { nome: "Joinville",              cidade: estados.SC, img: "", descricao: "", url: "" },
+  { nome: "Marcílio Dias",          cidade: estados.SC, img: "", descricao: "", url: "" },
+
+  // Grupo 25 – São Paulo
+  { nome: "Água Santa",             cidade: estados.SP, img: "", descricao: "", url: "" },
+  { nome: "Noroeste",               cidade: estados.SP, img: "", descricao: "", url: "" },
+  { nome: "Portuguesa",             cidade: estados.SP, img: "", descricao: "", url: "" },
+  { nome: "Velo Clube",             cidade: estados.SP, img: "", descricao: "", url: "" },
+  { nome: "XV de Piracicaba",       cidade: estados.SP, img: "", descricao: "", url: "" },
+
+  // Grupo 26 – Sergipe
+  { nome: "Sergipe",                cidade: estados.SE, img: "", descricao: "", url: "" },
+
+  // Grupo 27 – Tocantins
+  { nome: "Tocantinópolis",         cidade: estados.TO, img: "", descricao: "", url: "" }
+
 ];
 
 function zoomClubeD(posicao, event) {
