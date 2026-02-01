@@ -1,0 +1,43 @@
+.conteudo{
+    margin:10px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 35px;
+    margin-right: 35px;
+    
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.perguntas{
+    padding: 15px;
+    margin-left:25px;
+    margin-left: 100px;
+}
+
+.paises_sede{
+    display: flex;
+    display: flex;
+}
+
+.paises_sede img{
+    height: 150px;
+    width: 150px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #9ECE9A;
+  color: #ffffff;
+}
